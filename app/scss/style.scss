@@ -1,0 +1,56 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.banner {
+    background-color: #1F4437;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding: 9px 0;
+}
+
+.header {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0;
+    }
+}
+
+.menu {
+
+    &__inner {
+        display: flex;
+    }
+    &__list {
+        display: flex;
+    }
+
+    &__list-link {
+        margin-left: 40px;
+    }
+}
+
+.menu-cart {
+    position: relative;
+}
+
+.menu-cart::before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/cart.svg);
+    width: 20px;
+    height: 20px;
+    left: -30px;
+    top: -1px;
+}
+
+.border {
+    border-top: 1px solid #1F4437;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+}
