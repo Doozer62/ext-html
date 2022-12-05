@@ -2,11 +2,11 @@ html,
 body {
   height: 100%;
   @extend %Raleway-500;
-  color: #1F4437;
+  @extend %color-text;
 }
 
 a {
-  color: #1F4437;
+  @extend %color-text;
 }
 
 .wrapper {
@@ -36,6 +36,7 @@ a {
   border: none;
   cursor: pointer;
   display: flex;
+  @extend %color-text;
 }
 
 .dropdown-icon {
@@ -53,10 +54,11 @@ a {
 
 .dropdown-content {
   height: 80vh;
+  background-color: #fff;
   // padding-left: 100px;
   padding-top: 30px;
-  width: 100vw;
-  left: -639px;
+  width: 99vw;
+  left: -658px;
   position: absolute;
   display: none;
   -webkit-box-shadow: 10px 5px 7px 0px rgba(0, 0, 0, 0.21);
