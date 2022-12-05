@@ -158,6 +158,13 @@
         line-height: 16px;
         color: #fff;
         margin-left: 19px;
+        transition: all 0.8s;
+    }
+
+    &__form-btn:hover {
+        background-color: #fff;
+        @extend %color-text;
+        border-radius: 10px;
     }
 
     &__top-logo {
@@ -170,15 +177,48 @@
         justify-content: space-between;
     }
 
+    &__menu-item {
+        margin-top: 10px;
+    }
+
+    &__menu-link {
+        color: rgba(255, 255, 255, 0.6);
+        transition: all 0.8s;
+    }
+
+    &__menu-link:hover, 
+    &__menu-link:focus, 
+    &__menu-link:active {
+        color: #fff;
+    }
+
     &__social {
         display: flex;
+        margin-top: 10px;
+    }
+
+    &__social li:not(:first-child) {
+        margin-left: 20px;
     }
 
     &__contacts-items {
         display: grid;
+        color: rgba(255, 255, 255, 0.6);
     }
 
     &__copyright {
         max-width: 305px;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.04em;
+    }
+
+    &__copyright-text p {
+        margin-top: 8px;
+    }
+
+    &__contacts-items a {
+        margin-top: 10px;
     }
 }
