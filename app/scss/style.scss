@@ -108,6 +108,133 @@
     width: 100%;
 }
 
+.rightside-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 590px;
+    background-color: #fff;
+    width: 100%;
+
+    &__top {
+        margin: 45px 0 0 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    &__close {
+        background-color: transparent;
+        border: none;
+        margin-right: 40px;
+        transition: all 0.8s;
+    }
+
+    &__close:hover {
+        transform: rotate(90deg);
+    }
+
+    &__content {
+        margin: 51px 0 0 60px;
+    }
+
+    &__title {
+        @extend %Playfair-400;
+        font-size: 36px;
+        line-height: 103.3%;
+        max-width: 390px;
+    }
+
+    &__text {
+        margin: 30px 0;
+        font-size: 14px;
+        line-height: 16px;
+        max-width: 327px;
+        letter-spacing: 0.05em;
+    }
+
+    &__read {
+        position: relative;
+        color: #994B2A;
+        transition: all 0.8s;
+    }
+
+    &__read::after {
+        position: absolute;
+        content: '';
+        background-image: url(../images/arrow-read.svg);
+        top: 5px;
+        right: -15px;
+        width: 10px;
+        height: 9px;
+    }
+
+    &__read:hover {
+        margin-left: 8px;
+    }
+
+    &__contacts {
+        margin: 64px 0 0 60px;
+        letter-spacing: 0.05em;
+    }
+
+    &__contacts-border {
+        border-top: 1px solid #1F4437;
+        width: 22px;
+        margin: 13px 0;
+    }
+
+    &__phone-text {
+        text-transform: uppercase;
+        font-family: 'Raleway-Medium';
+    }
+
+    &__phone {
+        font-weight: 700;
+    }
+
+    &__work {
+        margin-top: 5px;
+    }
+
+    &__email-text {
+        text-transform: uppercase;
+        margin-top: 28px;
+    }
+
+    &__email-delivery {
+        margin-bottom: 6px;
+    }
+
+    &__email {
+        font-weight: 700;
+    }
+
+    &__email-question {
+        margin: 26px 0 6px 0;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 64px 0 0 62px;
+    }
+
+    &__bottom-feedback {
+        margin-right: 50px;
+        transition: all 0.8s;
+    }
+
+    &__bottom-feedback:hover {
+        color: #994B2A;
+        margin-right: 56px;
+    }
+
+}
+
 
 .footer {
     background-color: #1F4437;
@@ -147,6 +274,10 @@
         border: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.808);
         margin-top: 6px;
+
+        &::placeholder {
+            font-family: 'Raleway';
+        }
     }
 
     &__form-btn {
@@ -186,8 +317,8 @@
         transition: all 0.8s;
     }
 
-    &__menu-link:hover, 
-    &__menu-link:focus, 
+    &__menu-link:hover,
+    &__menu-link:focus,
     &__menu-link:active {
         color: #fff;
     }
