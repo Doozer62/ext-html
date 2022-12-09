@@ -111,28 +111,23 @@
 
 .rightside-menu::-webkit-scrollbar-track {
     background: $green;
-  }
+}
 
-  .rightside-menu::-webkit-scrollbar {
+.rightside-menu::-webkit-scrollbar {
     width: 7px;
-  }
+}
 
 .rightside-menu::-webkit-scrollbar-thumb {
     border-radius: 20px;
     border: 5px solid rgb(68, 151, 103);
-  }
+}
 
-  .rightside-menu.active {
-    display: block;
-    transition: left 1s;
-  }
-
-  .rightside-menu-active {
-    display: block;
+.rightside-menu.active {
+    transform: translateX(-0%);
+    transition: all 0.5s;
 }
 
 .rightside-menu {
-    display: none;
     position: fixed;
     right: 0;
     top: 0;
@@ -141,6 +136,11 @@
     background-color: #fff;
     width: 100%;
     overflow: auto;
+    transform: translateX(110%);
+    transition: all 0.8s;
+    border-left: 1px solid $green;
+    -webkit-box-shadow: -9px -1px 9px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: -9px -1px 9px 0px rgba(0, 0, 0, 0.12);
 
     &__top {
         margin: 45px 0 0 60px;
@@ -154,7 +154,7 @@
         background-color: transparent;
         border: none;
         margin-right: 40px;
-        transition: all 0.8s;
+        transition: all 0.5s;
     }
 
     &__close:hover {
@@ -290,10 +290,10 @@
         margin-top: 30px;
     }
 
-.mailing label {
-    z-index: 0;
-    position: relative;
-}
+    .mailing label {
+        z-index: 0;
+        position: relative;
+    }
 
 
     &__form-inner {
