@@ -26,7 +26,7 @@ a {
 .container {
   max-width: 1290px;
   margin: 0 auto;
-  padding: 0 15px;
+  // padding: 0 15px;
 }
 
 //Dropdown
@@ -106,3 +106,17 @@ a {
 // .dropdown:hover .dropdown-content {
 //   display: block;
 // }
+
+.title {
+  position: relative;
+}
+
+.title::before {
+  position: absolute;
+  content: '';
+  bottom: -15px;
+  background-image: url(../images/line-slider.svg);
+  height: 1px;
+  max-width: 85px;
+  width: 100%;
+}

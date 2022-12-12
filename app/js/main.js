@@ -1,3 +1,11 @@
+$(function () {
+  $('.top__slider').slick({
+    dots: true,
+    arrows: false,
+  });
+});
+
+
 //R I G H T  S I D E
 document.getElementById('contacts-link').addEventListener('click', () => {
     document.querySelector('.rightside-menu').classList.add('active');
@@ -20,4 +28,11 @@ document.getElementById('contacts-link').addEventListener('click', () => {
       m.style.display = (m.style.display != 'block') ? 'block' : 'none';
     }
   });
+
+
+
+
+
+
+
 
