@@ -298,15 +298,16 @@
         @extend %Playfair-400;
         margin-bottom: 40px;
         position: relative;
-    &::before {
-      position: absolute;
-      content: '';
-      bottom: -20px;
-      background-image: url(../images/line-slider.svg);
-      height: 1px;
-      max-width: 85px;
-      width: 100%;
-    }
+
+        &::before {
+            position: absolute;
+            content: '';
+            bottom: -20px;
+            background-image: url(../images/line-slider.svg);
+            height: 1px;
+            max-width: 85px;
+            width: 100%;
+        }
     }
 
     &__slider-text {
@@ -322,9 +323,11 @@
         transition: all 0.8s;
         line-height: 19px;
         letter-spacing: 0.05em;
+
         &:hover {
             margin-left: 8px;
         }
+
         &::before {
             position: absolute;
             content: '';
@@ -336,7 +339,7 @@
         }
     }
 
-    
+
     .slick-dots {
         display: flex;
         justify-content: center;
@@ -364,13 +367,16 @@
 
 .popular {
     padding: 50px 0 90px;
-    &__title {
-       
-        
-    }
 }
 
+.swiper {
+    // width: 600px;
+    // height: 300px;
+}
 
+.swiper-wrapper {
+    margin-top: 63px;
+}
 
 .footer {
     background-color: #1F4437;

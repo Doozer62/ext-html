@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "esm": "^3.2.25",
-    "jquery": "^3.6.1"
+    "jquery": "^3.6.1",
+    "swiper": "^8.4.5"
   }
 }
