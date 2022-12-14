@@ -1,3 +1,4 @@
+
 const { src, dest, watch, parallel, series } = require('gulp');
 const scss                 = require('gulp-sass')(require('sass'));
 const concat               = require('gulp-concat');
@@ -36,7 +37,7 @@ function scripts() {
         'node_modules/jquery/dist/jquery.js',
         'node_modules/slick-carousel/slick/slick.js',
         'node_modules/swiper/swiper-bundle.js',
-        'app/js/main.js'
+        'app/js/main.js',
     ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
@@ -77,7 +78,9 @@ function watching() {
     watch(['app/scss/**/*.scss'], styles);
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
     watch(['app/**/*html']).on('change', browserSync.reload);
-}
+};
+
+
 
 exports.styles      = styles;
 exports.scripts     = scripts;

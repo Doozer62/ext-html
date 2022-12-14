@@ -33,3 +33,12 @@
         url(../fonts/PlayfairDisplay-Regular.ttf);
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'PlayfairDisplay-SemiBold';
+    font-weight: 600;
+    font-style: normal;
+    src: local('PlayfairDisplay-SemiBold'),
+        url(../fonts/PlayfairDisplay-SemiBold.ttf);
+    font-display: swap;
+}

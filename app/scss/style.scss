@@ -339,7 +339,6 @@
         }
     }
 
-
     .slick-dots {
         display: flex;
         justify-content: center;
@@ -367,16 +366,104 @@
 
 .popular {
     padding: 50px 0 90px;
+
+    &__top {
+        display: flex;
+    }
 }
 
-.swiper {
-    // width: 600px;
-    // height: 300px;
+.swiper-popular {
+    &__title {
+        @extend %Playfair-600;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &__title-bottom {
+        @extend %Playfair-600;
+        position: relative;
+        line-height: 21px;
+        letter-spacing: -0.01em;
+    }
+
+    &__title-bottom::after {
+        position: absolute;
+        content: '';
+        background-image: url(../images/products/product-border.svg);
+        width: 22px;
+        height: 1px;
+        left: 1px;
+        top: 22px;
+    }
+
+    &__text {
+        margin-top: 5px;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+    }
 }
 
 .swiper-wrapper {
     margin-top: 63px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    padding: 20px 0;
 }
+
+.swiper-slide {
+    &__img {
+        box-shadow: 5px -1px 10px -5px #0622069a;
+        object-fit: cover;
+    }
+
+    &__bottom {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__price {
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        font-weight: 700;
+        font-feature-settings: 'pnum'on, 'lnum'on;
+    }
+
+    &__add-cart {
+        position: relative;
+        letter-spacing: 0.05em;
+        font-feature-settings: 'pnum'on, 'lnum'on;
+        color: #994B2A;
+        &:hover,
+        &:active,
+        &:focus {
+            border-bottom: 1px solid;
+        }
+    }
+}
+
+.swiper-scrollbar {
+    background-color: #994b2a21;
+}
+
+
+.swiper-scrollbar-drag {
+    background-color: #994B2A;
+    max-width: 195px;
+    cursor: pointer;
+}
+
+// .image-slider .swiper-button-prev::after {
+//     width: 20px;
+//     height: 20px;
+//     color: #0c3d0a;
+//     top: 10px;
+//     background-color: #333;
+//     font-size: 18px;
+// }
+
 
 .footer {
     background-color: #1F4437;
