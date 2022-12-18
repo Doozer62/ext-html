@@ -29,6 +29,12 @@ a {
   // padding: 0 15px;
 }
 
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 //Dropdown
 .drop-btn {
   position: relative;
@@ -107,8 +113,32 @@ a {
 //   display: block;
 // }
 
+.title-collection {
+  @extend %Playfair-400;
+  font-size: 36px;
+  line-height: 103.3%;
+  letter-spacing: -0.01em;
+  position: relative;
+  margin-bottom: 40px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    background-image: url(../images/line-slider.svg);
+    height: 1px;
+    max-width: 22px;
+    width: 100%;
+}
+}
+
 .title {
   position: relative;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .title::before {
@@ -125,3 +155,24 @@ a {
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
+
+.link-more {
+  position: relative;
+  color: #994B2A;
+  transition: all 0.8s;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  &:hover {
+    margin-left: 8px;
+}
+&::before {
+  position: absolute;
+  content: '';
+  background-image: url(../images/arrow-read.svg);
+  top: 5px;
+  right: -15px;
+  width: 10px;
+  height: 9px;
+}
+
+  }

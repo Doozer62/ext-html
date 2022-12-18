@@ -1,5 +1,4 @@
 
-
 // S W I P E R
 
 const swiper = new Swiper('.swiper', {
@@ -9,17 +8,16 @@ const swiper = new Swiper('.swiper', {
   slidesPerView: 4,
   spaceBetween: 35,
 
-
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 
-
   scrollbar: {
     el: '.swiper-scrollbar',
     draggable: true,
     freeModeSticky: true,
+    dynamicMainBullets: 2,
   },
 
   scrollbarDragStart: {
@@ -32,10 +30,80 @@ const swiper = new Swiper('.swiper', {
     slideShadows: false,
   },
 
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+    
+});
 
+const swiper2 = new Swiper('.swiper2', {
+
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 35,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+    freeModeSticky: true,
+    dynamicMainBullets: 2,
+  },
+
+  scrollbarDragStart: {
+    event: MouseEvent,
+  },
+
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 10,
+    slideShadows: false,
+  },
+
+  pagination: {
+    el: '.swiper-pagination2',
+    type: 'fraction',
+  },
+    
+});
+
+const swiperReviews = new Swiper('.swiper-reviews', {
+
+  direction: 'horizontal',
+  slidesPerView: 1,
+
+  navigation: {
+    nextEl: '.swiper-button-next-reviews',
+    prevEl: '.swiper-button-prev-reviews',
+  },
+
+  pagination: {
+    el: '.swiper-pagination-reviews',
+  },
+    
 });
 
 
+
+// swiper.on("beforeTransitionStart Init init", function () {
+//   let currentSlide = this.activeIndex + 1;
+//   document.querySelector('.swiper-counter').innerHTML = `
+//   <span class="counter__current">
+//   ${currentSlide < 10 ? '0' + currentSlide : currentSlide}
+//   </span> 
+//   / 
+//   <span class="counter__total">
+//     ${this.slides.length}
+//   </span>`;
+// });
+
+// swiper.init();
 
 
 $(function () {
@@ -68,11 +136,3 @@ document.getElementById('contacts-link').addEventListener('click', () => {
       m.style.display = (m.style.display != 'block') ? 'block' : 'none';
     }
   });
-
-
-
-
-
-
-
-
