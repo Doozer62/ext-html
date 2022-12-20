@@ -129,10 +129,12 @@ document.getElementById('contacts-link').addEventListener('click', () => {
   });
 
   document.addEventListener("click", function(e) {
-    let m = document.getElementById('dropdown-content');
+    const m = document.getElementById('dropdown-content');
     if (e.target.id != 'drop-btn' && e.target.id != 'dropdown-content') {
       m.style.display = 'none';
+      
     } else if (e.target.id == 'drop-btn') {
       m.style.display = (m.style.display != 'block') ? 'block' : 'none';
-    }
+    } 
+    
   });

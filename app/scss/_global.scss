@@ -44,6 +44,10 @@ a {
   cursor: pointer;
   display: flex;
   @extend %color-text;
+  transition: all 0.5s;
+  &:hover {
+    color: #994B2A;
+  }
 }
 
 .dropdown-icon {
@@ -73,7 +77,6 @@ a {
   // -webkit-box-shadow: 10px 5px 7px 0px rgba(0, 0, 0, 0.21);
   // box-shadow: 10px 5px 7px 0px rgba(0, 0, 0, 0.21);
   // z-index: 999;
-
   // display: none;
   transform: translateY(-1100%);
   position: fixed;
@@ -98,15 +101,32 @@ a {
   background-color: #fff;
 }
 
-.dropdown-content a {
+.dropdown-item {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   padding-left: 550px;
+  font-size: 14px;
+  overflow: hidden;
 }
 
 .dropdown-content a:hover {
   @extend %Raleway-700;
+}
+
+.dropdown-content a:hover + .dropdown-right {
+  opacity: 1.0;
+}
+
+.dropdown-social {
+  position: absolute;
+  right: 320px;
+  display: flex;
+  margin-top: 80px;
+}
+
+.dropdown-social li {
+  margin-left: 20px;
 }
 
 // .dropdown:hover .dropdown-content {
