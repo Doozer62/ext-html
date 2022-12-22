@@ -26,7 +26,7 @@ a {
 .container {
   max-width: 1290px;
   margin: 0 auto;
-  // padding: 0 15px;
+  padding: 0 15px;
 }
 
 .container-fluid {
@@ -45,6 +45,16 @@ a {
   display: flex;
   @extend %color-text;
   transition: all 0.5s;
+  &::after {
+    position: absolute;
+    content: '';
+    background-image: url(../images/dropdown.png);
+    width: 7px;
+    height: 6px;
+    top: 9px;
+    right: -8px;
+    z-index: 999;
+  }
   &:hover {
     color: #994B2A;
   }
@@ -90,6 +100,7 @@ a {
   z-index: 999;
   -webkit-box-shadow: -9px -1px 9px 0px rgba(0, 0, 0, 0.12);
   box-shadow: -9px -1px 9px 0px rgba(0, 0, 0, 0.12);
+  transition: all 0.5s;
 }
 
 .dropdown-content.active {
@@ -99,19 +110,29 @@ a {
 
 .dropdown-content>li {
   background-color: #fff;
+  transition: all 0.5s;
+}
+
+.dropdown-items {
+  margin-top: 5px;
+  display: grid;
+  justify-content: center;
+  margin-right: 470px;
 }
 
 .dropdown-item {
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
-  padding-left: 550px;
   font-size: 14px;
   overflow: hidden;
 }
 
+.dropdown-content a {
+  transition: all 0.5s;
+}
+
 .dropdown-content a:hover {
-  @extend %Raleway-700;
+  color: #994B2A;
 }
 
 .dropdown-content a:hover + .dropdown-right {
@@ -169,11 +190,6 @@ a {
   height: 1px;
   max-width: 85px;
   width: 100%;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 
 .link-more {

@@ -24,11 +24,11 @@ const swiper = new Swiper('.swiper', {
     event: MouseEvent,
   },
 
-  effect: 'coverflow',
-  coverflowEffect: {
-    rotate: 10,
-    slideShadows: false,
-  },
+  // effect: 'coverflow',
+  // coverflowEffect: {
+  //   rotate: 10,
+  //   slideShadows: false,
+  // },
 
   pagination: {
     el: '.swiper-pagination',
@@ -60,11 +60,11 @@ const swiper2 = new Swiper('.swiper2', {
     event: MouseEvent,
   },
 
-  effect: 'coverflow',
-  coverflowEffect: {
-    rotate: 10,
-    slideShadows: false,
-  },
+  // effect: 'coverflow',
+  // coverflowEffect: {
+  //   rotate: 10,
+  //   slideShadows: false,
+  // },
 
   pagination: {
     el: '.swiper-pagination2',
@@ -136,5 +136,5 @@ document.getElementById('contacts-link').addEventListener('click', () => {
     } else if (e.target.id == 'drop-btn') {
       m.style.display = (m.style.display != 'block') ? 'block' : 'none';
     } 
-    
   });
+

@@ -63,6 +63,7 @@ function images() {
 
 function build() {
     return src([
+        'app/fonts/**',
         'app/**/*.html',
         'app/css/style.min.css',
         'app/js/main.min.js'
