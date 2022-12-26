@@ -44,6 +44,7 @@
         margin-left: 40px;
         transition: all 0.8s;
         position: relative;
+
         &:hover {
             color: #994B2A;
         }
@@ -55,6 +56,7 @@
 
     &__link-cart {
         transition: all 0.8s;
+
         &:hover {
             color: #994B2A;
         }
@@ -63,21 +65,21 @@
     &__icon-cart {
         margin-right: 12px;
         transition: all 0.5s;
+
         &:hover {
             transform: scale(1.2);
         }
     }
 
     &__cart-num {
-        top: -7px;
+        top: -10px;
         right: 6px;
         position: absolute;
-        font-size: 8px;
+        font-size: 9px;
         letter-spacing: 1px;
         font-feature-settings: 'pnum'on, 'lnum'on;
         background-color: #DA4110;
-        width: 14px;
-        height: 14px;
+        padding: 5px 3px;
         color: #FFF;
         border-radius: 50%;
         display: flex;
@@ -349,6 +351,7 @@
     &__slider-info {
         max-width: 330px;
         position: absolute;
+        color: #FFF;
         // margin-left: 440px;
         // top: 100px;
         transform: translate(500px, 100px);
@@ -386,9 +389,11 @@
     }
 }
 
-.swiper-popular, .swiper-collection {
+.swiper-popular,
+.swiper-collection {
     &__title-link {
         transition: all 0.5s;
+
         &:hover {
             letter-spacing: 1.2px;
         }
@@ -451,7 +456,8 @@
     margin-left: -21px;
 }
 
-.swiper-popular {
+.swiper-popular,
+.filters-wrapper {
     &__title {
         @extend %Playfair-600;
         font-size: 24px;
@@ -483,7 +489,8 @@
     }
 }
 
-.swiper-wrapper {
+.swiper-wrapper,
+.filters-wrapper {
     margin-top: 63px;
     display: flex;
     justify-content: space-between;
@@ -491,7 +498,8 @@
     padding: 20px 0;
 }
 
-.swiper-slide {
+.swiper-slide,
+.filters-wrapper {
     &__img {
         object-fit: cover;
     }
@@ -547,11 +555,13 @@
     cursor: pointer;
 }
 
-.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+.swiper-horizontal>.swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
     position: relative;
     width: 100%;
     left: 0;
 }
+
 // .image-slider .swiper-button-prev::after {
 //     width: 20px;
 //     height: 20px;
@@ -732,6 +742,7 @@
         font-size: 16px;
         line-height: 19px;
         letter-spacing: 0.05em;
+
         & img {
             width: 90px;
             height: 90px;
@@ -779,6 +790,7 @@
 
     &__link-more {
         color: #FFF;
+
         &::before {
             position: absolute;
             content: '';
@@ -787,7 +799,7 @@
             right: -15px;
             width: 10px;
             height: 11px;
-          }
+        }
     }
 }
 
@@ -806,6 +818,7 @@
 // C O L L E C T I O N S  P A G E
 .collections-top {
     padding: 110px 0 160px;
+
     &__title {
         @extend %Playfair-400;
         font-size: 36px;
@@ -813,6 +826,7 @@
         letter-spacing: -0.01em;
         position: relative;
         margin-bottom: 40px;
+
         &::before {
             position: absolute;
             content: '';
@@ -823,6 +837,7 @@
             width: 100%;
         }
     }
+
     &__items {
         display: grid;
         max-width: 980px;
@@ -833,9 +848,58 @@
 
 .collections {
     &__item-right {
-         display: grid;
-         justify-items: end;
-         margin-right: 10%;
+        display: grid;
+        justify-items: end;
+        margin-right: 10%;
+    }
+}
+
+// B O T A N I C A  P A G E
+.filters {
+    padding: 0 0 130px 0;
+
+    &__buttons {
+        margin-left: -60px;
+    }
+
+    &__btn {
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #1F4437;
+        margin-left: 60px;
+        position: relative;
+        cursor: pointer;
+        line-height: 1;
+
+        &:after {
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #1F4437;
+            content: "";
+            transition: width 0.3s ease-out;
+        }
+        &:hover:after,
+        &:focus:after {
+            width: 100%;
+        }
+    }
+}
+
+.filters-wrapper {
+    display: flex;
+}
+
+.mix {
+    max-width: 288px;
+
+    &__price {
+        margin-right: 5px;
     }
 }
 

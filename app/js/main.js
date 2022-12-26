@@ -60,12 +60,6 @@ const swiper2 = new Swiper('.swiper2', {
     event: MouseEvent,
   },
 
-  // effect: 'coverflow',
-  // coverflowEffect: {
-  //   rotate: 10,
-  //   slideShadows: false,
-  // },
-
   pagination: {
     el: '.swiper-pagination2',
     type: 'fraction',
@@ -112,6 +106,8 @@ $(function () {
     arrows: false,
     infinite: false,
   });
+
+  const mixer = mixitup('.filters-inner');
 });
 
 //R I G H T  S I D E
