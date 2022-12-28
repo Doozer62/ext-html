@@ -105,9 +105,17 @@ $(function () {
     dots: true,
     arrows: false,
     infinite: false,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
   });
 
-  const mixer = mixitup('.filters-inner');
+  // M I X I T U P
+  const mixer = mixitup('.filters-inner', {
+    animation: {
+      enable: true
+    }
+  });
 });
 
 //R I G H T  S I D E

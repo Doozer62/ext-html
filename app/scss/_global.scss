@@ -168,10 +168,30 @@ a {
     bottom: -20px;
     background-image: url(../images/line-slider.svg);
     height: 1px;
-    max-width: 22px;
+    max-width: 85px;
     width: 100%;
 }
 }
+
+.title-reviews {
+  position: relative;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  &::before {
+    position: absolute;
+    content: '';
+    bottom: -13px;
+    background-image: url(../images/line-title-reviews.svg);
+    height: 1px;
+    max-width: 85px;
+    width: 100%;
+  }
+}
+
+
 
 .title {
   position: relative;
