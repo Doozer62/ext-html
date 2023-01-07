@@ -1,4 +1,3 @@
-
 // S W I P E R
 
 const swiper = new Swiper('.swiper', {
@@ -84,22 +83,6 @@ const swiperReviews = new Swiper('.swiper-reviews', {
 });
 
 
-
-// swiper.on("beforeTransitionStart Init init", function () {
-//   let currentSlide = this.activeIndex + 1;
-//   document.querySelector('.swiper-counter').innerHTML = `
-//   <span class="counter__current">
-//   ${currentSlide < 10 ? '0' + currentSlide : currentSlide}
-//   </span> 
-//   / 
-//   <span class="counter__total">
-//     ${this.slides.length}
-//   </span>`;
-// });
-
-// swiper.init();
-
-
 $(function () {
   $('.top__slider').slick({
     dots: true,
@@ -141,4 +124,78 @@ document.getElementById('contacts-link').addEventListener('click', () => {
       m.style.display = (m.style.display != 'block') ? 'block' : 'none';
     } 
   });
+
+
+  // A C C O R D I O N
+
+  const items = document.querySelectorAll(".accordion button");
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+  
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+  // F A N C Y  B O X
+  // const myCarousel = new Carousel(document.querySelector(".carousel"), {
+
+  // });
+
+  
+const mainCarousel = new Carousel(document.querySelector("#mainCarousel"), {
+  Dots: true,
+  Navigation: false,
+  on: {
+    createSlide: (carousel, slide) => {
+      slide.Panzoom = new Panzoom(slide.$el.querySelector(".panzoom"), {
+        panOnlyZoomed: true,
+        resizeParent: true,
+      });
+    },
+    deleteSlide: (carousel, slide) => {
+      if (slide.Panzoom) {
+        slide.Panzoom.destroy();
+        slide.Panzoom = null;
+      }
+    },
+  },
+});
+
+const thumbCarousel = new Carousel(document.querySelector("#thumbCarousel"), {
+  Sync: {
+    target: mainCarousel,
+    friction: 0,
+  },
+  Dots: false,
+  Navigation: false,
+  center: false,
+  infinite: false,
+});
+
+
+  var $ = require('jquery');
+require('fancybox')($);
+
+$(document).ready(function() {
+    $.fancybox.open($('.fancybox-me'));
+
+});
+
+
+
+
+
+
+
+
+
+
 
