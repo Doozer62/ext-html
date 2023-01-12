@@ -19,6 +19,10 @@
         justify-content: space-between;
         padding: 25px 0;
     }
+
+    &__btn-menu {
+        display: none;
+    }
 }
 
 .menu-btn {
@@ -79,7 +83,7 @@
         letter-spacing: 1px;
         font-feature-settings: 'pnum' on, 'lnum' on;
         background-color: #DA4110;
-        padding: 5px 3px;
+        padding: 5px 6px;
         color: #FFF;
         border-radius: 50%;
         display: flex;
@@ -524,6 +528,8 @@
         line-height: 1;
         text-decoration: none;
         margin-right: 5px;
+        background: none;
+        border: none;
 
         &::after {
             display: block;
@@ -768,6 +774,7 @@
 
     &__text {
         margin-top: 40px;
+        max-width: 306px;
     }
 }
 
@@ -894,7 +901,13 @@
         }
     }
 
-    &__price {}
+    &__price {
+        margin-top: 50px;
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
 
     &__carousel {
         margin-bottom: -50px;
@@ -906,8 +919,47 @@
         margin-left: 15px;
         margin-top: 100px;
     }
+
     &__right {
         max-width: 420px;
+    }
+
+    &__addcart {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__addcart-number {
+        padding: 13px;
+        border: 1px solid #DBB19F;
+        font-size: 18px;
+        color: #1F4437;
+        display: flex;
+        align-items: center;
+    }
+
+    &__addcart-number input {
+        border: none;
+        text-align: center;
+    }
+
+    &__addcart-number span {
+        cursor: pointer;
+    }
+
+    &__addcart-btn {
+        background-color: #994B2A;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        padding: 13px 60px;
+        transition: background-color 0.2s ease-in;
+
+        &:hover,
+        &:active {
+            background-color: #1f4437de;
+        }
     }
 
 }
@@ -933,6 +985,7 @@
         margin-top: 4px;
     }
 }
+
 
 .panzoom__content {
     max-width: 419px;
@@ -994,6 +1047,7 @@
     box-shadow: 0 0 0 3px #1f44376b;
 }
 
+
 // A C C O R D I O N
 
 .accordion {
@@ -1035,7 +1089,6 @@
             font-size: 14px;
             letter-spacing: 0.05em;
             text-transform: uppercase;
-
         }
 
         .icon {
@@ -1229,3 +1282,6 @@
         margin-top: 10px;
     }
 }
+
+
+@import 'media';

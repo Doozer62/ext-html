@@ -27,26 +27,31 @@
                             <ul class="dropdown-content" id="dropdown-content">
                                 <div class="border"></div>
                                 <ul class="dropdown-items">
-                                <li class="dropdown-item"><a class="dropdown-link" href="#">для здоровья и красоты</a>
+                                <li class="dropdown-item"><a class="dropdown-link" href="botanica.html">Fortuna Botanica</a>
                                     <div class="dropdown-right">
                                         <img src="images/content/collection-1.jpg" alt="" class="dropdown-right__image">
                                         <span class="dropdown-right__text">Основным достоинством нашего продукта является его высокая концентрация и сбалансированность компонентов...</span> 
                                     </div>
                                 </li>
-                                <li class="dropdown-item"><a class="dropdown-link" href="#">для готовки</a>
+                                <li class="dropdown-item"><a class="dropdown-link" href="forhealth.html">For Health and Cooking</a>
                                     <div class="dropdown-right">
                                         <img src="images/content/collection-2.jpg" alt="" class="dropdown-right__image">
                                         <span class="dropdown-right__text">Основным достоинством нашего продукта является его высокая концентрация и сбалансированность компонентов...</span>
                                     </div>
                                     
                                 </li>
-                                <li class="dropdown-item"><a class="dropdown-link" href="#">для ваших питомцев</a>
+                                <li class="dropdown-item"><a class="dropdown-link" href="foranimal.html">For Dogs and Cats</a>
                                     <div class="dropdown-right">
                                         <img src="images/content/collection-3.jpg" alt="" class="dropdown-right__image">
                                         <span class="dropdown-right__text">Основным достоинством нашего продукта является его высокая концентрация и сбалансированность компонентов...</span>
-      
                                     </div>
                                 </li>
+                                <li class="dropdown-item"><a class="dropdown-link" href="collections.html">Collections</a>
+                                    <div class="dropdown-right">
+                                    <img src="images/content/view-all.jpg" alt="" class="dropdown-right__image">
+                                    <span class="dropdown-right__text">Основным достоинством нашего продукта является его высокая концентрация и сбалансированность компонентов...</span>
+                                </div>
+                            </li>
                                 <li class="dropdown-item"><a class="dropdown-link" href="#">смотреть всё</a>
                                     <div class="dropdown-right">
                                     <img src="images/content/view-all.jpg" alt="" class="dropdown-right__image">
@@ -84,7 +89,7 @@
                         <li class="menu__list-item">
                            <a href="#" class="menu__list-link">
                             <img src="images/cart.svg" alt="" class="menu__icon-cart">
-                            <div class="menu__cart-num">99</div>
+                            <div id="product-in-cart" class="menu__cart-num">0</div>
                         </a>
                         </li>
                         <li class="menu__list-item menu__list-cart">
@@ -198,7 +203,7 @@
                     </div>
 
                     <div class="collections__item collections__item-right">
-                        <img src="../images/content/collection-2.jpg" alt="картинка коллекции" class="collections__image">
+                        <img src="images/content/collection-2.jpg" alt="картинка коллекции" class="collections__image">
                         <div class="collections__info">
                             <h3 class="collections__info-title title-collection">
                                 СО&sup2; Экстракты For Health and Cooking
@@ -212,7 +217,7 @@
                     </div>
 
                     <div class="collections__item">
-                        <img src="../images/content/collection-3.jpg" alt="картинка коллекции" class="collections__image">
+                        <img src="images/content/collection-3.jpg" alt="картинка коллекции" class="collections__image">
                         <div class="collections__info">
                             <h3 class="collections__info-title title-collection">
                                 СО&sup2; Экстракты
@@ -250,7 +255,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -260,7 +265,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -270,7 +275,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -280,7 +285,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -290,7 +295,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -300,7 +305,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -310,7 +315,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -320,7 +325,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1500 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                         </div>
                     </div>
@@ -367,11 +372,9 @@
                 <nav class="footer__menu">
                     <ul class="footer__menu-list">
                         <li class="footer__menu-title">Коллекции</li>
-                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Для здоровья и
-                                красоты</a></li>
-                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Для кулинарнии</a></li>
-                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Для домашних
-                                питомцев</a></li>
+                        <li class="footer__menu-item"><a href="botanica.html" class="footer__menu-link">Fortuna Botanica</a></li>
+                        <li class="footer__menu-item"><a href="forhealth.html" class="footer__menu-link">For Health and Cooking</a></li>
+                        <li class="footer__menu-item"><a href="foranimal.html" class="footer__menu-link">For Dogs and Cats</a></li>
                     </ul>
                 </nav>
                 <nav class="footer__menu">

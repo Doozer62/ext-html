@@ -1,5 +1,5 @@
-// S W I P E R
 
+// S W I P E R
 const swiper = new Swiper('.swiper', {
 
   direction: 'horizontal',
@@ -109,7 +109,8 @@ document.getElementById('contacts-link').addEventListener('click', () => {
   document.querySelector('.rightside-menu__close').addEventListener('click', () => {
     document.querySelector('.rightside-menu').classList.remove('active');
   });
-    
+
+
   //D R O P  D O W N
   document.querySelector('.drop-btn').addEventListener('click', () => {
     document.querySelector('.dropdown-content').classList.add('active');
@@ -125,6 +126,29 @@ document.getElementById('contacts-link').addEventListener('click', () => {
     } 
   });
 
+
+
+// N U M B E R  + -
+
+  $('.minus').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+});
+$('.plus').click(function () {
+    var $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+});
+
+// A D D  P R O D U C T
+$('.add-product').click(function () {
+  $("#product-in-cart").text(parseInt($("#product-in-cart").text()) + 1);
+});
 
   // A C C O R D I O N
 
@@ -143,53 +167,51 @@ function toggleAccordion() {
 }
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
+    
 
-  // F A N C Y  B O X
+    // F A N C Y  B O X
   // const myCarousel = new Carousel(document.querySelector(".carousel"), {
 
   // });
 
   
-const mainCarousel = new Carousel(document.querySelector("#mainCarousel"), {
-  Dots: true,
-  Navigation: false,
-  on: {
-    createSlide: (carousel, slide) => {
-      slide.Panzoom = new Panzoom(slide.$el.querySelector(".panzoom"), {
-        panOnlyZoomed: true,
-        resizeParent: true,
-      });
+  const mainCarousel = new Carousel(document.querySelector("#mainCarousel"), {
+    Dots: true,
+    Navigation: false,
+    on: {
+      createSlide: (carousel, slide) => {
+        slide.Panzoom = new Panzoom(slide.$el.querySelector(".panzoom"), {
+          panOnlyZoomed: true,
+          resizeParent: true,
+        });
+      },
+      deleteSlide: (carousel, slide) => {
+        if (slide.Panzoom) {
+          slide.Panzoom.destroy();
+          slide.Panzoom = null;
+        }
+      },
     },
-    deleteSlide: (carousel, slide) => {
-      if (slide.Panzoom) {
-        slide.Panzoom.destroy();
-        slide.Panzoom = null;
-      }
+  });
+  
+  const thumbCarousel = new Carousel(document.querySelector("#thumbCarousel"), {
+    Sync: {
+      target: mainCarousel,
+      friction: 0,
     },
-  },
-});
-
-const thumbCarousel = new Carousel(document.querySelector("#thumbCarousel"), {
-  Sync: {
-    target: mainCarousel,
-    friction: 0,
-  },
-  Dots: false,
-  Navigation: false,
-  center: false,
-  infinite: false,
-});
-
-
-  var $ = require('jquery');
-require('fancybox')($);
-
-$(document).ready(function() {
-    $.fancybox.open($('.fancybox-me'));
-
-});
-
-
+    Dots: false,
+    Navigation: false,
+    center: false,
+    infinite: false,
+  });
+  
+    var $ = require('jquery');
+  require('fancybox')($);
+  
+  $(document).ready(function() {
+      $.fancybox.open($('.fancybox-me'));
+  
+  });
 
 
 

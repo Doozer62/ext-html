@@ -1,0 +1,29 @@
+@media (max-width: 1000px){
+    .footer__info-title {
+        font-size: 46px;
+        margin-right: 5px;
+    }
+    .footer__form-btn{
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 895px){
+    .menu__list-link {
+        margin-left: 20px;
+    }
+    
+    .logo {
+        order: -1;
+    }
+}
+
+@media (max-width: 816px) {
+    .menu {
+        display: none;
+    }
+
+    .header__btn-menu {
+        display: block;
+    }
+}

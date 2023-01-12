@@ -27,8 +27,7 @@
                                 <ul class="dropdown-content" id="dropdown-content">
                                     <div class="border"></div>
                                     <ul class="dropdown-items">
-                                        <li class="dropdown-item"><a class="dropdown-link" href="#">для здоровья и
-                                                красоты</a>
+                                        <li class="dropdown-item"><a class="dropdown-link" href="#">Fortuna Botanica</a>
                                             <div class="dropdown-right">
                                                 <img src="images/content/collection-1.jpg" alt=""
                                                     class="dropdown-right__image">
@@ -37,7 +36,7 @@
                                                     компонентов...</span>
                                             </div>
                                         </li>
-                                        <li class="dropdown-item"><a class="dropdown-link" href="#">для готовки</a>
+                                        <li class="dropdown-item"><a class="dropdown-link" href="#">For Health and Cooking</a>
                                             <div class="dropdown-right">
                                                 <img src="images/content/collection-2.jpg" alt=""
                                                     class="dropdown-right__image">
@@ -47,8 +46,7 @@
                                             </div>
 
                                         </li>
-                                        <li class="dropdown-item"><a class="dropdown-link" href="#">для ваших
-                                                питомцев</a>
+                                        <li class="dropdown-item"><a class="dropdown-link" href="#">For Dogs and Cats</a>
                                             <div class="dropdown-right">
                                                 <img src="images/content/collection-3.jpg" alt=""
                                                     class="dropdown-right__image">
@@ -58,8 +56,14 @@
 
                                             </div>
                                         </li>
+                                        <li class="dropdown-item"><a class="dropdown-link" href="collections.html">Collections</a>
+                                            <div class="dropdown-right">
+                                            <img src="images/content/view-all.jpg" alt="" class="dropdown-right__image">
+                                            <span class="dropdown-right__text">Основным достоинством нашего продукта является его высокая концентрация и сбалансированность компонентов...</span>
+                                        </div>
+                                    </li>
                                         <li class="dropdown-item"><a class="dropdown-link"
-                                                href="collections.html">смотреть всё</a>
+                                                href="all-products.html">смотреть всё</a>
                                             <div class="dropdown-right">
                                                 <img src="images/content/view-all.jpg" alt=""
                                                     class="dropdown-right__image">
@@ -99,7 +103,7 @@
                         <li class="menu__list-item">
                             <a href="#" class="menu__list-link">
                                 <img src="images/cart.svg" alt="" class="menu__icon-cart">
-                                <div class="menu__cart-num">99</div>
+                                <div id="product-in-cart" class="menu__cart-num">0</div>
                             </a>
                         </li>
                         <li class="menu__list-item menu__list-cart">
@@ -180,7 +184,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <a href="#" class="rightside-menu__bottom-feedback">Оставить отзыв</a>
+                        <a href="#" class="rightside-menu__bottom-feedback open-popup">Оставить отзыв</a>
                     </div>
                 </div>
                 <button class="menu-btn">
@@ -188,6 +192,33 @@
                 </button>
             </div>
         </div>
+
+        <!-- P O P - U P -->
+        <div class="popup__bg"> 
+            <form class="popup">
+                <h4 class="title popup-title">Оставить отзыв</h4>
+                <img src="images/close.svg" class="close-popup">
+                <label>
+                    <input type="text" name="name">
+                    <div class="label__text">
+                        Ваше имя
+                    </div>
+                </label>
+                <label>
+                    <input type="tel" name="tel">
+                    <div class="label__text">
+                        Ваш телефон
+                    </div>
+                </label>
+                <label>
+                    <textarea name="message"></textarea>
+                    <div class="label__text">
+                        Ваше сообщение
+                    </div>
+                </label>
+                <button type="submit">Отправить</button>
+            </form>
+        </div> 
     </header>
 
     <main class="main">
@@ -266,7 +297,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                             </div>
                             <div class="collection-page__item">
@@ -276,7 +307,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1300 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                         </div>
                         <div class="collection-page__item">
@@ -286,7 +317,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                         </div>
                         <div class="collection-page__item">
@@ -296,7 +327,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
             </div>
             </div>
@@ -309,7 +340,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                             </div>
                             <div class="collection-page__item">
@@ -319,7 +350,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1300 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                         </div>
                         <div class="collection-page__item">
@@ -329,7 +360,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                         </div>
                         <div class="collection-page__item">
@@ -339,7 +370,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
             </div>
             </div>
@@ -352,7 +383,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                             </div>
                             <div class="collection-page__item">
@@ -362,7 +393,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1300 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                         </div>
                         <div class="collection-page__item">
@@ -372,7 +403,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                         </div>
                         <div class="collection-page__item">
@@ -382,7 +413,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
             </div>
             </div>
@@ -395,7 +426,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                             </div>
                             <div class="collection-page__item">
@@ -405,7 +436,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1300 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                         </div>
                         <div class="collection-page__item">
@@ -415,7 +446,7 @@
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
-                                <a href="#" class="swiper-slide__add-cart">добавить</a>
+                                <button class="swiper-slide__add-cart add-product">добавить</button>
                             </div>
                         </div>
 
@@ -650,7 +681,7 @@
                         </li>
                         <li class="footer__menu-item"><a href="#" class="footer__menu-link">О нас</a></li>
                         <li class="footer__menu-item"><a href="#" class="footer__menu-link">Доставка</a></li>
-                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Оставить отзыв</a></li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link open-popup">Оставить отзыв</a></li>
                     </ul>
                 </nav>
                 <div class="footer__contacts">

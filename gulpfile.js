@@ -9,7 +9,6 @@ const del                  = require('del');
 
 const browserSync          = require('browser-sync').create();
 
-
 function browsersync() {
     browserSync.init({
         server: {
@@ -41,6 +40,7 @@ function scripts() {
         'node_modules/slick-carousel/slick/slick.js',
         'node_modules/mixitup/dist/mixitup.min.js',
         'node_modules/swiper/swiper-bundle.js',
+        'app/js/popup.js',
         'app/js/main.js',
     ])
     .pipe(concat('main.min.js'))
