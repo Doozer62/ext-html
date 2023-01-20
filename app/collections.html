@@ -179,31 +179,35 @@
             </div>
         </div>
 
-                <!-- P O P - U P -->
-                <div class="popup__bg"> 
-                    <form class="popup">
-                        <img src="images/close.svg" class="close-popup">
-                        <label>
-                            <input type="text" name="name">
-                            <div class="label__text">
-                                Ваше имя
-                            </div>
-                        </label>
-                        <label>
-                            <input type="tel" name="tel">
-                            <div class="label__text">
-                                Ваш телефон
-                            </div>
-                        </label>
-                        <label>
-                            <textarea name="message"></textarea>
-                            <div class="label__text">
-                                Ваше сообщение
-                            </div>
-                        </label>
-                        <button type="submit">Отправить</button>
-                    </form>
-                </div> 
+        <!-- P O P - U P -->
+        <div class="popup__bg"> 
+            <form class="popup">
+                <div class="popup-inner">
+                <h4 class="popup-title">Оставить отзыв</h4>
+                <img src="images/line-slider.svg" class="popup-title__line" alt="">
+                <img src="images/icon-close.svg" class="close-popup">
+            </div>
+                <label>
+                    <input type="text" name="name" placeholder="Как к вам обращаться">
+                    <div class="label__text label__name">
+                        Ваше имя
+                    </div>
+                </label>
+                <label>
+                    <input type="tel" name="tel" placeholder="name@example.com ">
+                    <div class="label__text label__email">
+                        Ваш email
+                    </div>
+                </label>
+                <label>
+                    <textarea name="message"></textarea>
+                    <div class="label__text">
+                        Ваш отзыв
+                    </div>
+                </label>
+                <button class="popup__btn" type="submit">Отправить</button>
+            </form>
+        </div> 
     </header>
 
     <main class="main">
@@ -277,7 +281,7 @@
                         <div class="swiper-slide">
                             <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 1">
                             <h4 class="swiper-popular__title">№01</h4>
-                            <p class="swiper-popular__title-bottom"><a href="#" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
+                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
@@ -287,7 +291,7 @@
                         <div class="swiper-slide">
                             <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 2">
                             <h4 class="swiper-popular__title">№02</h4>
-                            <p class="swiper-popular__title-bottom"><a href="#" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
+                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
@@ -297,7 +301,7 @@
                         <div class="swiper-slide">
                             <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 3">
                             <h4 class="swiper-popular__title">№03</h4>
-                            <p class="swiper-popular__title-bottom"><a href="#" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
+                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
@@ -307,7 +311,7 @@
                         <div class="swiper-slide">
                             <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 4">
                             <h4 class="swiper-popular__title">№04</h4>
-                            <p class="swiper-popular__title-bottom"><a href="#" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
+                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
@@ -317,7 +321,7 @@
                         <div class="swiper-slide">
                             <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 4">
                             <h4 class="swiper-popular__title">№05</h4>
-                            <p class="swiper-popular__title-bottom"><a href="#" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
+                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
@@ -327,7 +331,7 @@
                         <div class="swiper-slide">
                             <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 4">
                             <h4 class="swiper-popular__title">№06</h4>
-                            <p class="swiper-popular__title-bottom"><a href="#" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
+                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
@@ -337,7 +341,7 @@
                         <div class="swiper-slide">
                             <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 4">
                             <h4 class="swiper-popular__title">№07</h4>
-                            <p class="swiper-popular__title-bottom"><a href="#" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
+                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
@@ -347,7 +351,7 @@
                         <div class="swiper-slide">
                             <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 4">
                             <h4 class="swiper-popular__title">№08</h4>
-                            <p class="swiper-popular__title-bottom"><a href="#" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
+                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
                             <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1500 ₽.</span>
@@ -393,7 +397,11 @@
                         fill="white" />
                 </svg>
             </div>
+        </div>
 
+        <p class="border-footer"></p>
+
+            <div class="container">
             <div class="footer__bottom">
                 <nav class="footer__menu">
                     <ul class="footer__menu-list">
@@ -459,6 +467,10 @@
                 </div>
                 </nav>
 
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo-footer-media.png" alt="" class="ext-logo-media">
+                </a>
+
                 <div class="footer__copyright">
                     <span class="footer__copyright-text">
                         Privacy Policy | Boston Accident Lawyers Breakstone, White & Gluck
@@ -476,7 +488,7 @@
                     </span>
                 </div>
             </div>
-            <a href="#" class="logo-link"><svg class="ext-logo" width="66" height="26" viewBox="0 0 66 26" fill="none"
+            <a href="index.html" class="logo-link"><svg class="ext-logo" width="66" height="26" viewBox="0 0 66 26" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 25.2V4.5H13.22V7.33H3V13.14H11.5V15.97H3V22.37H13.22V25.2H0Z" fill="white" />
                     <path
@@ -491,6 +503,7 @@
             </a>
         </div>
     </footer>
+
 
 
     <script src="js/main.min.js"></script>

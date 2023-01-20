@@ -38,7 +38,6 @@ function scripts() {
         'node_modules/@fancyapps/ui/dist/carousel.umd.js',
         'node_modules/@fancyapps/ui/dist/panzoom.umd.js',
         'node_modules/slick-carousel/slick/slick.js',
-        'node_modules/mixitup/dist/mixitup.min.js',
         'node_modules/swiper/swiper-bundle.js',
         'app/js/popup.js',
         'app/js/main.js',

@@ -75,6 +75,7 @@ a {
 .popup-inner {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .popup-title {
@@ -111,10 +112,9 @@ a {
 
 /* Далее код для стилизации формы */
 .close-popup {
-  top: 50px;
-  right: 30px;
   cursor: pointer;
   width: 23px;
+  height: 23px;
   transition: all 0.5s;
 }
 
@@ -395,3 +395,5 @@ a {
 }
 
   }
+
+  

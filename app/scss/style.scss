@@ -20,7 +20,7 @@
         padding: 25px 0;
     }
 
-    &__btn-menu {
+    &__btn-inner {
         display: none;
     }
 }
@@ -394,7 +394,8 @@
 }
 
 .swiper-popular,
-.swiper-collection {
+.swiper-collection
+ {
     &__title-link {
         transition: all 0.5s;
 
@@ -461,7 +462,8 @@
 }
 
 .swiper-popular,
-.filters-wrapper {
+.filters-wrapper,
+.cart {
     &__title {
         @extend %Playfair-600;
         font-size: 24px;
@@ -931,7 +933,6 @@
     }
 
     &__addcart-number {
-        padding: 13px;
         border: 1px solid #DBB19F;
         font-size: 18px;
         color: #1F4437;
@@ -946,6 +947,10 @@
 
     &__addcart-number span {
         cursor: pointer;
+    }
+
+    &__addcart-icon {
+        padding: 5px 6px;
     }
 
     &__addcart-btn {
@@ -1158,9 +1163,8 @@
 
 
 
-
-
-.footer {
+.footer,
+.media-menu {
     background-color: #1F4437;
     color: #fff;
     padding: 71px 0 124px;
@@ -1282,6 +1286,180 @@
         margin-top: 10px;
     }
 }
+
+.media-menu.active {
+transform: translateX(-0%);
+transition: all 0.5s;
+}
+
+
+  
+.media-menu {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 560px;
+    transform: translateY(-200%);
+    transition: all 0.8s;
+    overflow: auto;
+
+    &::-webkit-scrollbar-track {
+        background: $green;
+    }
+    
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        border: 8px solid rgb(68, 151, 103);
+    }
+
+    &__top {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin-right: 100px;
+    }
+
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__top-logo {
+        width: 49px;
+        height: 25px;
+    }
+
+    &__ext-logo {
+        width: 54px;
+        height: 20px;
+        margin-left: 9px;
+    }
+
+    &__btn-close {
+        display: flex;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.5s;
+        margin-left: 32px;
+
+        svg {
+            width: 23px;
+
+        }
+        &:hover,
+        &:active {
+            transform: rotate(90deg);
+        }
+
+    }
+
+    &__bottom {
+        display: grid;
+        margin-top: 15px;
+    }
+
+    &__menu-list {
+        margin-top: 35px;
+    }
+
+    &__menu-cart {
+        margin-top: 35px;
+        transition: all 0.8s;
+
+        &:hover,
+        :focus,
+        :active {
+            color: rgba(255, 255, 255, 0.575);
+        }
+    }
+
+    &__contacts-title {
+        margin-top: 35px;
+    }
+    
+    &__social {
+        margin-top: 35px;
+    }
+}
+
+.ext-logo-media {
+    display: none;
+}
+
+        @-webkit-keyframes swing {
+            15% {
+              -webkit-transform: translateX(9px);
+              transform: translateX(9px);
+            }
+            30% {
+              -webkit-transform: translateX(-9px);
+              transform: translateX(-9px);
+            }
+            40% {
+              -webkit-transform: translateX(6px);
+              transform: translateX(6px);
+            }
+            50% {
+              -webkit-transform: translateX(-6px);
+              transform: translateX(-6px);
+            }
+            65% {
+              -webkit-transform: translateX(3px);
+              transform: translateX(3px);
+            }
+            100% {
+              -webkit-transform: translateX(0);
+              transform: translateX(0);
+            }
+          }
+          
+          @keyframes swing {
+            15% {
+              -webkit-transform: translateX(9px);
+              transform: translateX(9px);
+            }
+            30% {
+              -webkit-transform: translateX(-9px);
+              transform: translateX(-9px);
+            }
+            40% {
+              -webkit-transform: translateX(6px);
+              transform: translateX(6px);
+            }
+            50% {
+              -webkit-transform: translateX(-6px);
+              transform: translateX(-6px);
+            }
+            65% {
+              -webkit-transform: translateX(3px);
+              transform: translateX(3px);
+            }
+            100% {
+              -webkit-transform: translateX(0);
+              transform: translateX(0);
+            }
+          }
+          
+          .icon-youtube:hover, .icon-vk:hover, .icon-insta:hover {
+            -webkit-animation: swing 0.6s ease;
+            animation: swing 0.6s ease;
+             -webkit-animation-iteration-count: 1;
+             animation-iteration-count: 1;
+          }
+
+          
+
 
 
 @import 'media';
