@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap");
-@import 'vars';
+// @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap");
 @import 'fonts';
+@import 'vars';
 @import 'reset';
 @import 'libs';
 @import 'global';
@@ -38,6 +38,8 @@
 
     &__list {
         display: flex;
+        font-size: 14px;
+        letter-spacing: 0.05em;
     }
 
     &__list-item {
@@ -81,7 +83,7 @@
         position: absolute;
         font-size: 9px;
         letter-spacing: 1px;
-        font-feature-settings: 'pnum' on, 'lnum' on;
+        font-feature-settings: 'pnum'on, 'lnum'on;
         background-color: #DA4110;
         padding: 5px 6px;
         color: #FFF;
@@ -394,8 +396,7 @@
 }
 
 .swiper-popular,
-.swiper-collection
- {
+.swiper-collection {
     &__title-link {
         transition: all 0.5s;
 
@@ -519,12 +520,12 @@
         font-size: 14px;
         letter-spacing: 0.05em;
         font-weight: 700;
-        font-feature-settings: 'pnum' on, 'lnum' on;
+        font-feature-settings: 'pnum'on, 'lnum'on;
     }
 
     &__add-cart {
         letter-spacing: 0.05em;
-        font-feature-settings: 'pnum' on, 'lnum' on;
+        font-feature-settings: 'pnum'on, 'lnum'on;
         color: #994B2A;
         position: relative;
         line-height: 1;
@@ -771,7 +772,7 @@
         margin-top: 17px;
         font-size: 12px;
         line-height: 14px;
-        font-feature-settings: 'pnum' on, 'lnum' on;
+        font-feature-settings: 'pnum'on, 'lnum'on;
     }
 
     &__text {
@@ -908,7 +909,7 @@
         font-weight: 700;
         font-size: 18px;
         letter-spacing: 0.05em;
-        font-feature-settings: 'pnum' on, 'lnum' on;
+        font-feature-settings: 'pnum'on, 'lnum'on;
     }
 
     &__carousel {
@@ -1160,7 +1161,133 @@
     }
 }
 
+.cart {
+    padding: 33px 0 85px 0;
 
+    &__title {
+        font-size: 16px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left-items {
+        margin-top: 32px;
+    }
+
+    &__left-items li:nth-child(odd) {
+        background-color: rgba(219, 177, 159, 0.1);
+    }
+
+    &__left-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #1F4437;
+    }
+
+    &__img {
+        max-width: 193px;
+    }
+
+    &__left-description {
+        margin-top: 4px;
+        font-size: 14px;
+    }
+
+    &__left-content {
+        margin-left: 32px;
+        max-width: 195px;
+    }
+
+    &__addcart-number {
+        margin-top: 0;
+        margin-left: 128px;
+    }
+
+    &__addcart-number .product-card__addcart-number {
+        border: none;
+    }
+
+    &__addcart-number input {
+        background-color: transparent;
+    }
+
+    &__prices {
+        display: grid;
+        margin-left: 24px;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: right;
+        letter-spacing: 0.05em;
+        line-height: 22px;
+        min-width: 82px;
+        font-feature-settings: 'pnum'on, 'lnum'on;
+    }
+
+    &__icon-close {
+        margin-left: 50px;
+        margin-right: 40px;
+        cursor: pointer;
+    }
+
+    &__right {
+        margin-left: 25px;
+        width: 420px;
+        margin-top: 30px;
+    }
+
+    &__right-title {
+        font-size: 30px;
+        font-family: 'PlayfairDisplay-Medium';
+        font-weight: 500;
+    }
+
+    &__right-inner {
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        display: grid;
+    }
+
+    &__right-cost,
+    &__right-discount,
+    &__right-delivery,
+    &__right-total {
+        max-width: 420px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__right-cost {
+        margin-top: 0;
+    }
+
+    &__right-border {
+        border: 1px solid #1F4437;
+        margin-top: 50px;
+    }
+
+    &__right-number {
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        font-feature-settings: 'pnum'on, 'lnum'on;
+    }
+
+    &__right-btn {
+        border: none;
+        background-color: #994B2A;
+        color: #fff;
+        font-size: 18px;
+        padding: 13px 0;
+        margin-top: 30px;
+    }
+
+}
 
 
 .footer,
@@ -1288,12 +1415,11 @@
 }
 
 .media-menu.active {
-transform: translateX(-0%);
-transition: all 0.5s;
+    transform: translateX(-0%);
+    transition: all 0.5s;
 }
 
 
-  
 .media-menu {
     position: fixed;
     top: 0;
@@ -1310,11 +1436,11 @@ transition: all 0.5s;
     &::-webkit-scrollbar-track {
         background: $green;
     }
-    
+
     &::-webkit-scrollbar {
         width: 10px;
     }
-    
+
     &::-webkit-scrollbar-thumb {
         border-radius: 20px;
         border: 8px solid rgb(68, 151, 103);
@@ -1357,6 +1483,7 @@ transition: all 0.5s;
             width: 23px;
 
         }
+
         &:hover,
         &:active {
             transform: rotate(90deg);
@@ -1387,7 +1514,7 @@ transition: all 0.5s;
     &__contacts-title {
         margin-top: 35px;
     }
-    
+
     &__social {
         margin-top: 35px;
     }
@@ -1397,68 +1524,81 @@ transition: all 0.5s;
     display: none;
 }
 
-        @-webkit-keyframes swing {
-            15% {
-              -webkit-transform: translateX(9px);
-              transform: translateX(9px);
-            }
-            30% {
-              -webkit-transform: translateX(-9px);
-              transform: translateX(-9px);
-            }
-            40% {
-              -webkit-transform: translateX(6px);
-              transform: translateX(6px);
-            }
-            50% {
-              -webkit-transform: translateX(-6px);
-              transform: translateX(-6px);
-            }
-            65% {
-              -webkit-transform: translateX(3px);
-              transform: translateX(3px);
-            }
-            100% {
-              -webkit-transform: translateX(0);
-              transform: translateX(0);
-            }
-          }
-          
-          @keyframes swing {
-            15% {
-              -webkit-transform: translateX(9px);
-              transform: translateX(9px);
-            }
-            30% {
-              -webkit-transform: translateX(-9px);
-              transform: translateX(-9px);
-            }
-            40% {
-              -webkit-transform: translateX(6px);
-              transform: translateX(6px);
-            }
-            50% {
-              -webkit-transform: translateX(-6px);
-              transform: translateX(-6px);
-            }
-            65% {
-              -webkit-transform: translateX(3px);
-              transform: translateX(3px);
-            }
-            100% {
-              -webkit-transform: translateX(0);
-              transform: translateX(0);
-            }
-          }
-          
-          .icon-youtube:hover, .icon-vk:hover, .icon-insta:hover {
-            -webkit-animation: swing 0.6s ease;
-            animation: swing 0.6s ease;
-             -webkit-animation-iteration-count: 1;
-             animation-iteration-count: 1;
-          }
+@-webkit-keyframes swing {
+    15% {
+        -webkit-transform: translateX(9px);
+        transform: translateX(9px);
+    }
 
-          
+    30% {
+        -webkit-transform: translateX(-9px);
+        transform: translateX(-9px);
+    }
+
+    40% {
+        -webkit-transform: translateX(6px);
+        transform: translateX(6px);
+    }
+
+    50% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+
+    65% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes swing {
+    15% {
+        -webkit-transform: translateX(9px);
+        transform: translateX(9px);
+    }
+
+    30% {
+        -webkit-transform: translateX(-9px);
+        transform: translateX(-9px);
+    }
+
+    40% {
+        -webkit-transform: translateX(6px);
+        transform: translateX(6px);
+    }
+
+    50% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+
+    65% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.icon-youtube:hover,
+.icon-vk:hover,
+.icon-insta:hover {
+    -webkit-animation: swing 0.6s ease;
+    animation: swing 0.6s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+
+
 
 
 

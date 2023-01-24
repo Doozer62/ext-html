@@ -35,6 +35,16 @@ a {
   padding: 0 10px;
 }
 
+.price-crossed {
+  text-decoration-line: line-through;
+  font-feature-settings: 'pnum'on, 'lnum'on;
+  opacity: 0.5;
+}
+
+.product-card__addcart-icon {
+  max-width: fit-content;
+}
+
 //P O P - U P
 .popup__bg {
   position: fixed;
@@ -42,15 +52,15 @@ a {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgba(0,0,0,0.5);
-  opacity: 0; 
-  pointer-events: none; 
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
   transition: 0.5s all;
 }
 
-.popup__bg.active { 
-  opacity: 1; 
-  pointer-events: all; 
+.popup__bg.active {
+  opacity: 1;
+  pointer-events: all;
   transition: 0.5s all;
   z-index: 9999;
 }
@@ -59,7 +69,8 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-   transform: translate(-50%, -50%) scale(0); /* По центру экрана */
+  transform: translate(-50%, -50%) scale(0);
+  /* По центру экрана */
   background: #fff;
   max-width: 690px;
   width: 100%;
@@ -97,7 +108,7 @@ a {
 
 
 .popup.active {
-  transform: translate(-50%, -50%) scale(1); 
+  transform: translate(-50%, -50%) scale(1);
   transition: 0.5s all;
 }
 
@@ -150,7 +161,7 @@ a {
   border-bottom: 2px solid #994B2A;
 }
 
-.popup input:focus + .label__text {
+.popup input:focus+.label__text {
   color: #994B2A;
 }
 
@@ -170,7 +181,7 @@ a {
   border-bottom: 2px solid #994B2A;
 }
 
-.popup textarea:focus + .label__text {
+.popup textarea:focus+.label__text {
   color: #994B2A;
 }
 
@@ -201,15 +212,16 @@ a {
 
 //Dropdown
 .drop-btn {
-  padding-bottom: -15px;
   position: relative;
   background-color: #fff;
-  font-size: 16px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
   border: none;
   cursor: pointer;
   display: flex;
   @extend %color-text;
   transition: all 0.5s;
+
   &::after {
     position: absolute;
     content: '';
@@ -220,6 +232,7 @@ a {
     right: -8px;
     z-index: 999;
   }
+
   &:hover {
     color: #994B2A;
   }
@@ -300,7 +313,7 @@ a {
   color: #994B2A;
 }
 
-.dropdown-content a:hover + .dropdown-right {
+.dropdown-content a:hover+.dropdown-right {
   opacity: 1.0;
 }
 
@@ -335,7 +348,7 @@ a {
     height: 1px;
     max-width: 85px;
     width: 100%;
-}
+  }
 }
 
 .title-reviews {
@@ -345,6 +358,7 @@ a {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+
   &::before {
     position: absolute;
     content: '';
@@ -381,19 +395,19 @@ a {
   transition: all 0.8s;
   line-height: 19px;
   letter-spacing: 0.05em;
+
   &:hover {
     margin-left: 8px;
-}
-&::before {
-  position: absolute;
-  content: '';
-  background-image: url(../images/arrow-read.svg);
-  top: 5px;
-  right: -15px;
-  width: 10px;
-  height: 9px;
-}
-
   }
 
-  
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/arrow-read.svg);
+    top: 5px;
+    right: -15px;
+    width: 10px;
+    height: 9px;
+  }
+
+}
