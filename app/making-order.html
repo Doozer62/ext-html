@@ -81,7 +81,7 @@
                         <ul class="menu__list">
                             <li class="menu__list-item"><a href="#" class="menu__list-link">Что такое экстракты</a></li>
                             <li class="menu__list-item"><a href="#" class="menu__list-link">О нас</a></li>
-                            <li class="menu__list-item"><a href="making-order.html" class="menu__list-link">Доставка</a></li>
+                            <li class="menu__list-item"><a href="#" class="menu__list-link">Доставка</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -279,7 +279,7 @@
                             <li class="media-menu__menu-item"><a href="#" class="media-menu__menu-link">Что такое экстракты</a>
                             </li>
                             <li class="media-menu__menu-item"><a href="#" class="media-menu__menu-link">О нас</a></li>
-                            <li class="media-menu__menu-item"><a href="making-order.html" class="media-menu__menu-link">Доставка</a></li>
+                            <li class="media-menu__menu-item"><a href="#" class="media-menu__menu-link">Доставка</a></li>
                             <li class="menu__list-item media-menu__menu-cart">
                                 <a href="cart.html" class="media-menu__link-cart">Корзина</a>  
                             </li>
@@ -337,498 +337,112 @@
         </div>
     </header>
 
-    <main class="main">
-        <section class="top">
+    <section class="making-order">
+        <div class="container">
+            <h1 class="making-order__title title">
+                оформление заказа
+            </h1>
+            <div class="making-order__inner">
+            <form id="form" method="post" class="making-order__form" onsubmit="return checkForm(this)">
 
-            <div class="top__inner">
-                <div class="top__slider">
-                    <div class="top__slider-item">
-                        <div class="top__slider-inner">
-                            <img src="images/content/slider1.jpg" alt="картинка слайдера-1" class="top__slider-img">
 
-                            <div class="top__slider-info">
-                                <h3 class="title-collection">
-                                    СО&sup2; Концентраты
-                                    растений без растворителя
-                                </h3>
-                                <p class="top__slider-text">
-                                    концентрат естественных веществ растений
-                                </p>
-                                <a href="#" class="link-more">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="top__slider-item">
-                        <div class="top__slider-inner">
-                            <img src="images/content/slider-3.jpg" alt="картинка слайдера-2" class="top__slider-img">
-
-                            <div class="top__slider-info">
-                                <h3 class="top__slider-title title-collection">
-                                    СО&sup2; Концентраты
-                                    растений без растворителя
-                                </h3>
-                                <!-- <img src="images/line-slider.svg" alt="" class="line-slider"> -->
-                                <p class="top__slider-text">
-                                    концентрат естественных веществ растений
-                                </p>
-                                <a href="#" class="link-more">Подробнее</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="top__slider-item">
-                        <div class="top__slider-inner">
-                            <img src="images/content/back.jpg" alt="картинка слайдера-3" class="top__slider-img">
-
-                            <div class="top__slider-info">
-                                <h3 class="top__slider-title title-collection">
-                                    СО&sup2; Концентраты
-                                    растений без растворителя
-                                </h3>
-                                <!-- <img src="images/line-slider.svg" alt="" class="line-slider"> -->
-                                <p class="top__slider-text">
-                                    концентрат естественных веществ растений
-                                </p>
-                                <a href="#" class="link-more">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="making-order__form-field">
+                    <label for="name"><p>Имя *</p></label>
+                    <input name="name" id="name" class="input-name" type="text">
                 </div>
-            </div>
-        </section>
-
-        <section class="popular">
-            <div class="container">
-                <div class="popular__top">
-                    <h2 class="popular__title title">популярное</h2>
-                    <div class="popular__arrows">
-                        <div id="next" class="swiper-button-next"></div>
-                        <div class="swiper-pagination"></div>
-                        <div id="prev" class="swiper-button-prev"></div>
-                    </div>
+                <div class="making-order__form-field">
+                    <label for="lastname"><p>Фамилия *</p></label>
+                    <input name="lastname" id="lastname" class="input-lastname" type="text">
                 </div>
 
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 1">
-                            <h4 class="swiper-popular__title">№01</h4>
-                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-popular__title-link">Экстракт "Anti-acne"</a></p>
-                            <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
-                            <div class="swiper-slide__bottom">
-                                <span class="swiper-slide__price">1200 ₽.</span>
-                                <button class="swiper-slide__add-cart add-product">добавить</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 2">
-                            <h4 class="swiper-popular__title">№02</h4>
-                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-popular__title-link">Экстракт "Anti-acne"</a></p>
-                            <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
-                            <div class="swiper-slide__bottom">
-                                <span class="swiper-slide__price">1200 ₽.</span>
-                                <button class="swiper-slide__add-cart add-product">добавить</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 3">
-                            <h4 class="swiper-popular__title">№03</h4>
-                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-popular__title-link">Экстракт "Anti-acne"</a></p>
-                            <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
-                            <div class="swiper-slide__bottom">
-                                <span class="swiper-slide__price">1200 ₽.</span>
-                                <button class="swiper-slide__add-cart add-product">добавить</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 4">
-                            <h4 class="swiper-popular__title">№04</h4>
-                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-popular__title-link">Экстракт "Anti-acne"</a></p>
-                            <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
-                            <div class="swiper-slide__bottom">
-                                <span class="swiper-slide__price">1200 ₽.</span>
-                                <button class="swiper-slide__add-cart add-product">добавить</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 4">
-                            <h4 class="swiper-popular__title">№05</h4>
-                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-popular__title-link">Экстракт "Anti-acne"</a></p>
-                            <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
-                            <div class="swiper-slide__bottom">
-                                <span class="swiper-slide__price">1200 ₽.</span>
-                                <button class="swiper-slide__add-cart add-product">добавить</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 4">
-                            <h4 class="swiper-popular__title">№06</h4>
-                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-popular__title-link">Экстракт "Anti-acne"</a></p>
-                            <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
-                            <div class="swiper-slide__bottom">
-                                <span class="swiper-slide__price">1200 ₽.</span>
-                                <button class="swiper-slide__add-cart add-product">добавить</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 4">
-                            <h4 class="swiper-popular__title">№07</h4>
-                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-popular__title-link">Экстракт "Anti-acne"</a></p>
-                            <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
-                            <div class="swiper-slide__bottom">
-                                <span class="swiper-slide__price">1200 ₽.</span>
-                                <button class="swiper-slide__add-cart add-product">добавить</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 4">
-                            <h4 class="swiper-popular__title">№08</h4>
-                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-popular__title-link">Экстракт "Anti-acne"</a></p>
-                            <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
-                            <div class="swiper-slide__bottom">
-                                <span class="swiper-slide__price">1500 ₽.</span>
-                                <button class="swiper-slide__add-cart add-product">добавить</button>
-                            </div>
-                        </div>
 
-                    </div>
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="collections">
-            <div class="container">
-                <h2 class="collections__title title">коллекции</h2>
-                <div class="collections__inner">
-                    <div class="collections__item">
-                        <img src="images/content/collection-1.jpg" alt="" class="collections__image">
-                        <div class="collections__info">
-                            <h3 class="collections__info-title title-collection">
-                                СО&sup2; Экстракты Fortuna Botanica
-                            </h3>
-                            <p class="collections__info-text">
-                                Основным достоинством нашего продукта является его высокая концентрация и
-                                сбалансированность компонентов...
-                            </p>
-                            <a href="#" class="link-more">Подробнее</a>
-                        </div>
-                    </div>
-
-                    <div class="collections__item">
-                        <img src="images/content/collection-2.jpg" alt="" class="collections__image">
-                        <div class="collections__info">
-                            <h3 class="collections__info-title title-collection">
-                                СО&sup2; Экстракты For Health and Cooking
-                            </h3>
-                            <p class="collections__info-text">
-                                Основным достоинством нашего продукта является его высокая концентрация и
-                                сбалансированность компонентов...
-                            </p>
-                            <a href="#" class="link-more">Подробнее</a>
-                        </div>
-                    </div>
-
-                    <div class="collections__item">
-                        <img src="images/content/collection-3.jpg" alt="" class="collections__image">
-                        <div class="collections__info">
-                            <h3 class="collections__info-title title-collection">
-                                СО&sup2; Экстракты
-                                For Dogs and Cats
-                            </h3>
-                            <p class="collections__info-text">
-                                Основным достоинством нашего продукта является его высокая концентрация и
-                                сбалансированность компонентов...
-                            </p>
-                            <a href="#" class="link-more">Подробнее</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="reviews">
-            <div class="container">
-                <h2 class="reviews__title title-reviews">отзывы</h2>
-
-                <div class="swiper-reviews">
-                    <div class="arrows-reviews">
-                        <div class="swiper-button-prev-reviews">
-                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="20.5" cy="20.5" r="19.5" stroke="#DBB19F" stroke-width="2" />
-                                <path
-                                    d="M30 22C30.5523 22 31 21.5523 31 21C31 20.4477 30.5523 20 30 20L30 22ZM10.2929 20.2929C9.90237 20.6834 9.90237 21.3166 10.2929 21.7071L16.6569 28.0711C17.0474 28.4616 17.6805 28.4616 18.0711 28.0711C18.4616 27.6805 18.4616 27.0474 18.0711 26.6569L12.4142 21L18.0711 15.3431C18.4616 14.9526 18.4616 14.3195 18.0711 13.9289C17.6805 13.5384 17.0474 13.5384 16.6569 13.9289L10.2929 20.2929ZM30 20L11 20L11 22L30 22L30 20Z"
-                                    fill="#DBB19F" />
-                            </svg>
-                        </div>
-                        <div class="swiper-button-next swiper-button-next-reviews">
-                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="20.5" cy="20.5" r="19.5" transform="rotate(-180 20.5 20.5)" stroke="#DBB19F"
-                                    stroke-width="2" />
-                                <path
-                                    d="M11 19C10.4477 19 10 19.4477 10 20C10 20.5523 10.4477 21 11 21L11 19ZM30.7071 20.7071C31.0976 20.3166 31.0976 19.6834 30.7071 19.2929L24.3431 12.9289C23.9526 12.5384 23.3195 12.5384 22.9289 12.9289C22.5384 13.3195 22.5384 13.9526 22.9289 14.3431L28.5858 20L22.9289 25.6569C22.5384 26.0474 22.5384 26.6805 22.9289 27.0711C23.3195 27.4616 23.9526 27.4616 24.3431 27.0711L30.7071 20.7071ZM11 21L30 21L30 19L11 19L11 21Z"
-                                    fill="#DBB19F" />
-                            </svg>
-                        </div>
-                    </div>
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="reviews__inner">
-                                <img src="images/reviews-img.svg" alt="" class="reviews__image">
-                                <p class="reviews__text">
-                                    Витамин С — это универсальный помощник в косметике. Он борется с пигментацией,
-                                    выравнивает тон и цвет кожи. При ежедневном применении средств с данным компонентом
-                                    кожа
-                                    становится
-                                    заметно более упругой и сияющей.
-                                </p>
-                                <p class="reviews__border"></p>
-
-                                <h5 class="reviews__name">
-                                    ольга зеленина
-                                </h5>
-                                <p class="reviews__profession">
-                                    косметолог-эстетист
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="reviews__inner">
-                                <img src="images/reviews-img.svg" alt="" class="reviews__image">
-                                <p class="reviews__text">
-                                    Витамин С — это универсальный помощник в косметике. Он борется с пигментацией,
-                                    выравнивает тон и цвет кожи. При ежедневном применении средств с данным компонентом
-                                    кожа
-                                    становится
-                                    заметно более упругой и сияющей.
-                                </p>
-                                <p class="reviews__border"></p>
-                                <h5 class="reviews__name">
-                                    ольга зеленина
-                                </h5>
-                                <p class="reviews__profession">
-                                    косметолог-эстетист
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="reviews__inner">
-                                <img src="images/reviews-img.svg" alt="" class="reviews__image">
-                                <p class="reviews__text">
-                                    Витамин С — это универсальный помощник в косметике. Он борется с пигментацией,
-                                    выравнивает тон и цвет кожи. При ежедневном применении средств с данным компонентом
-                                    кожа
-                                    становится
-                                    заметно более упругой и сияющей.
-                                </p>
-                                <p class="reviews__border"></p>
-
-                                <h5 class="reviews__name">
-                                    ольга зеленина
-                                </h5>
-                                <p class="reviews__profession">
-                                    косметолог-эстетист
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="reviews__inner">
-                                <img src="images/reviews-img.svg" alt="" class="reviews__image">
-                                <p class="reviews__text">
-                                    Витамин С — это универсальный помощник в косметике. Он борется с пигментацией,
-                                    выравнивает тон и цвет кожи. При ежедневном применении средств с данным компонентом
-                                    кожа
-                                    становится
-                                    заметно более упругой и сияющей.
-                                </p>
-                                <p class="reviews__border"></p>
-
-                                <h5 class="reviews__name">
-                                    ольга зеленина
-                                </h5>
-                                <p class="reviews__profession">
-                                    косметолог-эстетист
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="swiper-pagination-reviews__inner">
-                        <div class="swiper-pagination-reviews"></div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <section class="advantages">
-            <div class="container">
-                <h2 class="advantages__title title">
-                    преимущества
-                </h2>
-                <div class="advantages__items">
-                    <div class="advantages__item">
-                        <img src="./images/rose-icon.png" alt="иконка роза" class="advantages__image">
-                        <p class="advantages__number">
-                            01
-                        </p>
-                        <p class="advantages__text">
-                            СО2-экстракт абсолютно
-                            натуральный чистый продукт;
-                        </p>
-                    </div>
-
-                    <div class="advantages__item">
-                        <img src="./images/seeding-icon.png" alt="иконка" class="advantages__image">
-                        <p class="advantages__number">
-                            02
-                        </p>
-                        <p class="advantages__text">
-                            СО2-экстракт абсолютно
-                            натуральный чистый продукт;
-                        </p>
-                    </div>
-
-                    <div class="advantages__item">
-                        <img src="./images/dog-icon.png" alt="иконка" class="advantages__image">
-                        <p class="advantages__number">
-                            03
-                        </p>
-                        <p class="advantages__text">
-                            СО2-экстракт абсолютно
-                            натуральный чистый продукт;
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="information">
-            <div class="container">
-                <p class="information__text">
-                    СО2-экстракты – концентрат естественных веществ растений, передающий их аромат
-                    и вкус, а также набор биоактивных веществ (провитаминов и витаминов групп A, D, E.
-                </p>
-                <a href="#" class="link-more information__link-more">Подробнее</a>
-            </div>
-        </section>
-
-        <section class="collection-body">
-            <div class="container">
-                <div class="popular__top">
-                    <h2 class="popular__title title">Коллекция для ухода за телом</h2>
-                    <div class="popular__arrows">
-                        <div id="next" class="swiper-button-next"></div>
-                        <div class="swiper-pagination2"></div>
-                        <div id="prev" class="swiper-button-prev"></div>
-                    </div>
+                <div class="making-order__form-field">
+                <label class="label-phone" for="phone"><p>Телефон *</p></label>
+                <input aria-invalid="false" aria-required="true" type="tel" id="phone" name="phone" data-inputmask="'mask': '+7(999) 999-9999'" placeholder="+7">
                 </div>
 
-                <div class="swiper2">
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 1">
-                            <h4 class="swiper-popular__title">№01</h4>
-                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
-                            <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
-                            <div class="swiper-slide__bottom">
-                                <span class="swiper-slide__price">1200 ₽.</span>
-                                <button class="swiper-slide__add-cart add-product">добавить</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 2">
-                            <h4 class="swiper-popular__title">№02</h4>
-                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
-                            <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
-                            <div class="swiper-slide__bottom">
-                                <span class="swiper-slide__price">1200 ₽.</span>
-                                <button class="swiper-slide__add-cart add-product">добавить</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 3">
-                            <h4 class="swiper-popular__title">№03</h4>
-                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
-                            <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
-                            <div class="swiper-slide__bottom">
-                                <span class="swiper-slide__price">1200 ₽.</span>
-                                <button class="swiper-slide__add-cart add-product">добавить</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 4">
-                            <h4 class="swiper-popular__title">№04</h4>
-                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
-                            <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
-                            <div class="swiper-slide__bottom">
-                                <span class="swiper-slide__price">1200 ₽.</span>
-                                <button class="swiper-slide__add-cart add-product">добавить</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 4">
-                            <h4 class="swiper-popular__title">№05</h4>
-                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
-                            <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
-                            <div class="swiper-slide__bottom">
-                                <span class="swiper-slide__price">1200 ₽.</span>
-                                <button class="swiper-slide__add-cart add-product">добавить</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 4">
-                            <h4 class="swiper-popular__title">№06</h4>
-                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
-                            <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
-                            <div class="swiper-slide__bottom">
-                                <span class="swiper-slide__price">1200 ₽.</span>
-                                <button class="swiper-slide__add-cart add-product">добавить</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 4">
-                            <h4 class="swiper-popular__title">№07</h4>
-                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
-                            <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
-                            <div class="swiper-slide__bottom">
-                                <span class="swiper-slide__price">1200 ₽.</span>
-                                <button class="swiper-slide__add-cart add-product">добавить</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 4">
-                            <h4 class="swiper-popular__title">№08</h4>
-                            <p class="swiper-popular__title-bottom"><a href="product.html" class="swiper-collection__title-link">Экстракт "Anti-acne"</a></p>
-                            <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
-                            <div class="swiper-slide__bottom">
-                                <span class="swiper-slide__price">1500 ₽.</span>
-                                <button class="swiper-slide__add-cart add-product">добавить</button>
-                            </div>
-                        </div>
-
+                <div class="making-order__form-field">
+                    <label class="label-phone" for="email"><p>Email *</p></label>
+                    <input type="email" id="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="name@example.com" required>
                     </div>
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
+            </form>
+            
+                
+            <form id="form" method="post" class="making-order__form" onsubmit="return checkForm(this)">
+             
+    
+                  <div class="making-order__form-field">
+                    <label for="country"><p>Страна/Регион *</p></label>
+                    <select id="country" name="Region">
+                        <option value="ru">Россия</option>
+                        <option value="en">English</option>
+                        <option value="de">German</option>
+                        <option value="es">Spanish</option>
+                    </select>
+                  </div>
+
+                  <div class="making-order__form-field">
+                  <label for="city"><p>Город</p></label>
+                  <input id="city" name="city" type="text" />
+                </div>
+                <div class="making-order__form-field">
+                    <label for="city"><p>Адрес доставки</p></label>
+                    <input id="addres" name="city" autocomplete="on" type="text">
+                </div>
+
+                <div class="making-order__form-field">
+                <label for="delivery"><p>Способ доставки</p></label>
+                <select id="delivery" class="making-order__form-select" name="delivery">
+                    <option class="making-order__form-option" data-value="Курьером">Курьером</option>
+                    <option class="making-order__form-option" data-value="Самовывоз">Самовывоз</option>
+                  </select>
+                </div>
+
+                <div class="making-order__form-field">
+                  <label for="payment"><p>Адрес доставки</p></label>
+                  <select id="payment" class="making-order__form-select" name="payment">
+                    <option class="making-order__form-option" data-value="Картой курьеру">Картой курьеру</option>
+                    <option class="making-order__form-option" data-value="Наличные">Наличные</option>
+                  </select>
+                </div>
+                </form>
+
+                <div class="cart__right">
+                    <h2 class="cart__right-title title-collection">Сумма Заказа</h2>
+                    <div class="cart__right-inner">
+                        <div class="cart__right-cost">
+                            <span class="cart__right-text">Стоимость:</span>
+                            <span class="cart__right-number price-crossed">3600 &#8381;.</span>
+                        </div>
+                        <div class="cart__right-discount">
+                            <span class="cart__right-text">Со скидкой:</span>
+                            <span class="cart__right-number">3390 &#8381;.</span>
+                        </div>
+                        <div class="cart__right-delivery">
+                            <span class="cart__right-text">Доставка:</span>
+                            <span class="cart__right-number">400 &#8381;.</span>
+                        </div>
+                        <p class="cart__right-border"></p>
+
+                        <div class="cart__right-total">
+                            <span class="cart__right-text">ВСЕГО К ОПЛАТЕ:</span>
+                            <span class="cart__right-number">3790 &#8381;.</span>
+                        </div>
+                        <button type="submit" name="submit" value="готово" class="cart__right-btn">Подтвердить заказ</button>
+                    </div>
+
+                    <div class="making-order__right-content">
+                    <p class="making-order__personal-data">Нажимая кнопку вы соглашаетесь 
+                        согласие на обработку персональных данных</p>
+                        <p class="making-order__right-info">Оплата кредитной картой при получении заказа
+                             производится через мобильный POS-терминал, который привезет с собой курьер</p>
+                            </div>
                 </div>
             </div>
-        </section>
-    </main>
 
+
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
@@ -881,7 +495,7 @@
                         <li class="footer__menu-item"><a href="#" class="footer__menu-link">Что такое экстракты</a>
                         </li>
                         <li class="footer__menu-item"><a href="#" class="footer__menu-link">О нас</a></li>
-                        <li class="footer__menu-item"><a href="making-order.html" class="footer__menu-link">Доставка</a></li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Доставка</a></li>
                         <li class="footer__menu-item"><a href="#" class="footer__menu-link open-popup">Оставить отзыв</a></li>
                     </ul>
                 </nav>

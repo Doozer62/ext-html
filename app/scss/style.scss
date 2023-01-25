@@ -1286,8 +1286,69 @@
         padding: 13px 0;
         margin-top: 30px;
     }
-
 }
+
+//P A G E  making-order
+
+.making-order {
+    padding: 33px 0 62px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 41px;
+    }
+
+    &__form-field {
+        margin-top: 24px;
+        letter-spacing: 0.04em;
+
+        input,
+        select {
+            border: none;
+            border-bottom: 2px solid #DCD5C5;
+            background-color: #ebdbd466;
+            width: 380px;
+            height: 49px;
+            margin-top: 6px;
+            padding-left: 11px;
+            color: #994B2A;
+        }
+
+        input:focus {
+            background-color: #DCD5C5;
+        }
+
+        input::placeholder {
+            color: #994B2A;
+        }
+
+        select {
+            appearance: none;
+            position: relative;
+            width: 100%;
+            background: url(../images/arrow-select.svg) no-repeat right 6% bottom 16px;
+            background-color: #ebdbd466;
+        }
+    }
+
+    &__right-content {
+        text-align: center;
+        font-size: 12px;
+        line-height: 160%;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 0.05em;
+        margin-top: 25px;
+        max-width: 350px;
+    }
+
+
+    &__right-info {
+        font-weight: 400;
+    }
+}
+
 
 
 .footer,
