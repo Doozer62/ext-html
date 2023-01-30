@@ -172,8 +172,6 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
     
 
 
-
-
  //  M E D I A  M E N U
  document.getElementById('btn-menu').addEventListener('click', () => {
   document.querySelector('.media-menu').classList.add('active');
@@ -182,6 +180,7 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
   document.querySelector('.media-menu__btn-close').addEventListener('click', () => {
   document.querySelector('.media-menu').classList.remove('active');
   });
+
 
 
 
