@@ -1231,6 +1231,11 @@
         margin-left: 50px;
         margin-right: 40px;
         cursor: pointer;
+        transition: all 0.5s;
+
+        &:hover {
+            transform: rotate(90deg);
+        }
     }
 
     &__right {
@@ -1559,6 +1564,7 @@
         max-width: 612px;
         margin-right: 0;
         list-style: none;
+
         li:nth-last-child(-n+3) {
             margin-left: 30px;
         }
@@ -1579,7 +1585,54 @@
     }
 }
 
+//P A G E  A B O U T
+.about {
+    padding: 110px 0;
 
+    &__title {
+        margin-left: 200px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    &__inner-right {
+        margin-left: 30px;
+    }
+}
+
+.inner {
+    &__right-text {
+        max-width: 700px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        margin-top: 30px;
+    }
+
+    &__right-title {
+        max-width: 390px;
+    }
+
+    &__right-bottom {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bottom-text {
+        margin-left: 20px;
+        max-width: 300px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+    }
+
+    &__text {
+        max-width: 716px;
+    }
+}
 
 
 
@@ -1627,6 +1680,7 @@
         border: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.808);
         margin-top: 6px;
+        color: #F1EEE8;
 
         &::placeholder {
             font-family: 'Raleway';
