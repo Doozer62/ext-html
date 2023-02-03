@@ -3,9 +3,7 @@
 const swiper = new Swiper('.swiper', {
 
   direction: 'horizontal',
-  loop: true,
   slidesPerView: 4,
-  spaceBetween: 35,
 
   navigation: {
     nextEl: '.swiper-button-next',
@@ -16,18 +14,12 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
     draggable: true,
     freeModeSticky: true,
-    dynamicMainBullets: 2,
+    dragSize: 195,
   },
 
   scrollbarDragStart: {
     event: MouseEvent,
   },
-
-  // effect: 'coverflow',
-  // coverflowEffect: {
-  //   rotate: 10,
-  //   slideShadows: false,
-  // },
 
   pagination: {
     el: '.swiper-pagination',
@@ -39,9 +31,7 @@ const swiper = new Swiper('.swiper', {
 const swiper2 = new Swiper('.swiper2', {
 
   direction: 'horizontal',
-  loop: true,
   slidesPerView: 4,
-  spaceBetween: 35,
 
   navigation: {
     nextEl: '.swiper-button-next',
@@ -53,10 +43,7 @@ const swiper2 = new Swiper('.swiper2', {
     draggable: true,
     freeModeSticky: true,
     dynamicMainBullets: 2,
-  },
-
-  scrollbarDragStart: {
-    event: MouseEvent,
+    dragSize: 195,
   },
 
   pagination: {
@@ -180,8 +167,5 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
   document.querySelector('.media-menu__btn-close').addEventListener('click', () => {
   document.querySelector('.media-menu').classList.remove('active');
   });
-
-
-
 
 
