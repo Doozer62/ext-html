@@ -548,7 +548,8 @@
     padding: 15px;
 }
 
-.swiper-slide:hover, .collection-page__item:hover {
+.swiper-slide:hover,
+.collection-page__item:hover {
     transform: scale(1.05);
 }
 
@@ -1638,6 +1639,72 @@
     }
 }
 
+//P A G E  E X T R A C T S
+.extracts {
+    padding: 110px 0;
+
+    &__title {
+        margin-left: 200px;
+    }
+}
+
+.extracts-top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+
+    &__right {
+        max-width: 757px;
+        margin-left: 32px;
+    }
+
+    &__right-title {
+        max-width: 390px;
+    }
+
+    &__right-text {
+        line-height: 160%;
+        letter-spacing: 0.05em;
+    }
+}
+
+.extracts-advantages {
+    margin-top: 75px;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text {
+        max-width: 757px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+    }
+    &__bottom-text {
+        max-width: 306px;
+        margin-left: 32px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+    }
+}
+
+.extracts-dignities,
+.extracts-differences {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    &__text {
+        max-width: 757px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+    }
+}
+
 
 
 .footer,
@@ -1685,10 +1752,6 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.808);
         margin-top: 6px;
         color: #F1EEE8;
-
-        &::placeholder {
-            font-family: 'Raleway';
-        }
     }
 
     &__form-btn {
