@@ -328,10 +328,6 @@ a {
   margin-left: 20px;
 }
 
-// .dropdown:hover .dropdown-content {
-//   display: block;
-// }
-
 .title-collection {
   @extend %Playfair-400;
   font-size: 36px;
@@ -358,16 +354,12 @@ a {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
 
-  &::before {
-    position: absolute;
-    content: '';
-    bottom: -13px;
-    background-image: url(../images/line-title-reviews.svg);
-    height: 1px;
-    max-width: 85px;
-    width: 100%;
-  }
+.title-reviews-border {
+  border-bottom: 1px solid #fff;
+  width: 70px;
+  margin-top: 10px;
 }
 
 .title {
@@ -410,4 +402,13 @@ a {
     height: 9px;
   }
 
+}
+
+.add-plus {
+  display: none;
+  color: #994B2A;
+  font-size:30px;
+  border: 1px solid #994B2A;
+  border-radius: 50%;
+  padding: 0 10px;
 }

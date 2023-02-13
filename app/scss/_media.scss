@@ -1,4 +1,58 @@
+@media (max-width: 1400px) {
+    .top__slider-info {
+        margin-left: -110px;
+        transform: translate(300px, 100px)
+    }
+
+    .collections__inner {
+        margin-left: -5px;
+    }
+
+    .collections__item {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .top__slider-img {
+        height: 360px;
+    }
+
+    .collections__image {
+        width: 311px;
+        height: 275px;
+    }
+
+    .title-collection {
+        font-size: 24px;
+        max-width: 311px;
+    }
+
+    .collections__info-text {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 1000px) {
+
+    .top__slider-img {
+    object-fit: cover;
+    }
+
+    .top__slider-info {
+        transform: translate(200px, 60px);
+    }
+
+    .collections__info-text {
+        max-width: 296px;
+    }
+
+    .collection-page__items {
+        grid-template-columns: 200px 200px 200px 200px;
+        gap: 21px;
+
+    }
+
     .footer__info-title {
         font-size: 46px;
         margin-right: 5px;
@@ -7,6 +61,7 @@
     .footer__form-btn {
         margin-right: 5px;
     }
+
 }
 
 @media (max-width: 895px) {
@@ -17,6 +72,40 @@
 
     .logo {
         order: -1;
+    }
+
+    .top__slider-title {
+        font-size: 24px;
+    }
+
+    .top__slider-text {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .link-more {
+        font-size: 14px;
+    }
+
+    .top__slider-img {
+        height: 260px;
+    }
+
+    .collections__inner {
+        display: grid;
+        justify-content: center;
+    }
+
+    .collections__item {
+        margin-top: 12px;
+    }
+
+    .reviews__inner {
+        font-size: 14px;
+    }
+
+    .title-reviews {
+        font-size: 14px;
     }
 
     .footer__form-input {
@@ -32,7 +121,12 @@
     }
 }
 
+
 @media (max-width: 816px) {
+
+    .title {
+        margin-left: 10px;
+    }
 
     .header__inner {
         display: flex;
@@ -62,6 +156,17 @@
         }
     }
 
+    .collection-page__items {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        justify-content: center;
+    }
+
+    .collection-body,
+    .collection-page {
+        padding: 60px 0 40px;
+    }
+
     .footer__top {
         display: grid;
         justify-content: center;
@@ -86,7 +191,7 @@
     .footer__form-btn {
         margin: 15px 0;
     }
-    
+
     .footer__top-logo {
         display: none;
     }
@@ -101,7 +206,6 @@
         justify-content: center;
         margin-top: 40px;
     }
-
 
     .footer__menu-title {
         margin-top: 30px;
@@ -129,5 +233,139 @@
 
     .ext-logo {
         display: none;
+    }
+}
+
+
+@media (max-width: 570px) {
+    .title {
+        font-size: 14px;
+    }
+
+    .slick-dots {
+        display: none;
+    }
+
+    .top__inner {
+        padding-bottom: 50px;
+    }
+
+    .collections {
+        padding: 30px 0;
+    }
+
+    .collections__image {
+        width: 300px;
+    }
+
+    .reviews__inner {
+        margin-top: -60px;
+    }
+
+    .swiper-button-prev-reviews {
+        display: none;
+        // width: 30px;
+        // height: 30px;
+    }
+
+    .advantages {
+        padding: 20px 0 90px;
+    }
+
+    .advantages__items {
+        margin-top: 80px;
+    }
+
+    .advantages__item img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .advantages__text {
+        font-size: 14px;
+    }
+
+    .information {
+        padding: 100px 0 150px;
+    }
+    
+    .information__text {
+        font-size: 24px;
+    }
+
+    .collection-page__items {
+        grid-template-columns: 165px 165px;
+    }
+
+    .collection-page__item {
+        border: 1px solid #F2EDE8;
+    }
+
+    .swiper-slide__inner {
+        padding: 5px;
+    }
+
+    .swiper-popular__title {
+        font-size: 20px;
+    }
+
+    .swiper-popular__title-bottom {
+        font-size: 14px;
+    }
+
+    .swiper-popular__text {
+        font-size: 12px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+
+    .swiper-slide__add-cart {
+        display: none;
+    }
+
+    .add-plus {
+        display: block;
+        margin-top: -12px;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .reviews {
+
+    } 
+
+    .top__slider-info {
+        transform: translate(152px, 40px);
+    }
+
+    .top__slider-title {
+        max-width: 130px;
+    }
+
+    .advantages__items {
+        display: grid;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .advantages__item {
+        margin-top: 30px;
+    }
+
+    .advantages__text {
+        margin-top: 10px;
+    }
+
+    .popular__title {
+        max-width: 150px;
+    }
+
+    .collection-page__items {
+        gap: 6px;
+        grid-template-columns: 140px 140px;
     }
 }

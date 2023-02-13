@@ -14,7 +14,7 @@ function browsersync() {
         server: {
             baseDir: 'app/'
         },
-        browser: ['Firefox', 'browser'],
+        browser: ['Chrome', 'browser'],
         notify: false
     });
 }

@@ -3,12 +3,20 @@
 const swiper = new Swiper('.swiper', {
 
   direction: 'horizontal',
-  slidesPerView: 4,
+  slidesPerView: 2,
+  breakpoints: {
+    816: {
+      slidesPerView: 4,
+    }
+  },
+
 
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
+
 
   scrollbar: {
     el: '.swiper-scrollbar',
@@ -31,7 +39,12 @@ const swiper = new Swiper('.swiper', {
 const swiper2 = new Swiper('.swiper2', {
 
   direction: 'horizontal',
-  slidesPerView: 4,
+  slidesPerView: 2,
+  breakpoints: {
+    816: {
+      slidesPerView: 4,
+    }
+  },
 
   navigation: {
     nextEl: '.swiper-button-next',
