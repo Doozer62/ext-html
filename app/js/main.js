@@ -182,3 +182,8 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
   });
 
 
+  AOS.init();
+
+  AOS.init({
+    duration: 1400,
+  });

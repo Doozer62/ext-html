@@ -8,6 +8,7 @@
     <title>E X T .</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -518,9 +519,12 @@
                     <div class="swiper-scrollbar"></div>
                 </div>
             </div>
+       
         </section>
 
+        
         <section class="collections">
+            <div data-aos="fade-right">
             <div class="container">
                 <h2 class="collections__title title">коллекции</h2>
                 <div class="collections__inner">
@@ -568,13 +572,14 @@
                     </div>
                 </div>
             </div>
+        </div>
         </section>
+    
 
          <section class="reviews">
             <div class="container">
                 
-                <div class="swiper-reviews">
-                    
+                <div class="swiper-reviews"> 
                     <div class="arrows-reviews">
                         <div class="swiper-button-prev-reviews">
                             <svg class="prev-button" width="41" height="41" viewBox="0 0 41 41" fill="none"
@@ -676,20 +681,23 @@
 
                         </div>
                     </div>
-
+                   
                     <div class="swiper-pagination-reviews__inner">
                         <div class="swiper-pagination-reviews"></div>
                     </div>
                 </div>
             </div>
+            
             </div>
         </section>
+
 
         <section class="advantages">
             <div class="container">
                 <h2 class="advantages__title title">
                     преимущества
                 </h2>
+                <div data-aos="zoom-out-left">
                 <div class="advantages__items">
                     <div class="advantages__item">
                         <img src="./images/rose-icon.png" alt="иконка роза" class="advantages__image">
@@ -723,7 +731,7 @@
                             натуральный чистый продукт;
                         </p>
                     </div>
-
+                </div>
                 </div>
             </div>
         </section>
@@ -1000,7 +1008,7 @@
 
 
     <!-- <script src="js/popup.js"></script> -->
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/product.js"></script>
     <script src="js/main.min.js"></script>
 </body>

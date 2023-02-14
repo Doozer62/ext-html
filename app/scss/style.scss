@@ -498,6 +498,7 @@
 .filters-wrapper {
     &__img {
         object-fit: cover;
+        width: 306px;
     }
 
     &__bottom {
@@ -735,6 +736,7 @@
 
 .advantages {
     padding: 66px 0 95px;
+    overflow: auto;
 
     &__items {
         display: flex;
@@ -886,6 +888,10 @@
     display: flex;
     justify-content: space-around;
     padding: 41px 0 104px 0;
+
+    .product-card__title-mobile {
+        display: none;
+    }
 
     &__link-back {
         margin-top: 41px;
