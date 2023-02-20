@@ -1657,7 +1657,6 @@
     margin-top: 45px;
 
     &__right {
-        max-width: 757px;
         margin-left: 32px;
     }
 
@@ -1668,6 +1667,7 @@
     &__right-text {
         line-height: 160%;
         letter-spacing: 0.05em;
+        max-width: 757px;
     }
 }
 

@@ -140,6 +140,7 @@ document.getElementById('contacts-link').addEventListener('click', () => {
       document.querySelector('.dropdown-content').classList.add('active');
     });
   
+
     document.addEventListener("click", function(e) {
       const m = document.getElementById('dropdown-content');
       if (e.target.id != 'drop-btn' && e.target.id != 'dropdown-content') {
@@ -147,7 +148,9 @@ document.getElementById('contacts-link').addEventListener('click', () => {
         
       } else if (e.target.id == 'drop-btn') {
         m.style.display = (m.style.display != 'block') ? 'block' : 'none';
+          
       } 
+
     });
 
 

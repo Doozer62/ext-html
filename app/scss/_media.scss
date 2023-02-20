@@ -31,12 +31,27 @@
     .collections__info-text {
         font-size: 14px;
     }
+
+    .extracts-advantages__bottom-img {
+        max-width: 600px;
+        max-height: 300px;
+    }
+
+    .inner__bottom-text {
+        margin: 50px 0;
+        max-width: 700px;
+    }
+
+    .inner__right-bottom {
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 1000px) {
 
     .top__slider-img {
-    object-fit: cover;
+        object-fit: cover;
     }
 
     .top__slider-info {
@@ -58,6 +73,23 @@
 
     .collections__item-right {
         margin-right: 0;
+    }
+
+    .cart {
+        &__inner {
+            display: grid;
+            justify-content: center;
+        }
+        &__right {
+            width: 100%;
+            margin-left: 0;
+        }
+        &__right-cost,
+        &__right-discount,
+        &__right-delivery,
+        &__right-total {
+            max-width: 100%;
+        }
     }
 
     .footer__info-title {
@@ -117,6 +149,7 @@
 
     .product-card {
         display: grid;
+        justify-items: center;
     }
 
     .product-card__title {
@@ -127,8 +160,16 @@
         display: block;
     }
 
+    .product-card__left {
+        display: grid;
+    }
+
     .product-card__left-items {
         display: none;
+    }
+
+    .product-card__carousel {
+        margin-bottom: 0;
     }
 
     .panzoom__viewport {
@@ -138,22 +179,98 @@
     #thumbCarousel .carousel__track {
         display: flex;
         justify-content: start;
+        margin-left: 7px;
     }
 
-    .carousel__slide {
-        
+    #thumbCarousel .carousel__slide {
+        margin-right: -20px;
     }
 
-    .panzoom__viewport .panzoom__content {
+    #thumbCarousel img {
+        margin-right: -5px;
+        width: 99px;
+    }
+
+    #mainCarousel .carousel__slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    .product-card__carousel-mini {
+        margin-left: -7px;
+    }
+
+    .panzoom__content img {
+        margin: 0;
         width: 311px;
     }
 
-    .panzoom__content {
-        width: 70%;
+    .product-card__right {
+        max-width: 311px;
+        display: grid;
     }
 
-    .product-card__right {
+    .product-card__addcart-btn {
+        font-size: 14px;
+        padding: 11px 24px;
+    }
 
+    .product-card__addcart-number {
+        font-size: 14px;
+    }
+
+    .extracts {
+        padding-top: 50px;
+    }
+
+    .extracts__title {
+        margin-left: 40px;
+    }
+
+    .extracts-top {
+        display: grid;
+        justify-items: center;
+    }
+
+    .extracts-top__left-img {
+        border-radius: 6px;
+    }
+
+    .extracts-top__right {
+        margin-left: 0;
+    }
+
+    .extracts-top__right-title {
+        margin-top: 65px;
+    }
+
+    .extracts-advantages__top {
+        display: grid;
+    }
+
+    .extracts-advantages__bottom {
+        display: grid;
+    }
+
+    .extracts-advantages__bottom-img {
+        max-width: 100vw;
+        margin-left: -15px;
+    }
+
+    .extracts-advantages__bottom-text {
+        max-width: max-content;
+        margin: 50px 0;
+    }
+
+    .extracts-dignities,
+    .extracts-differences {
+        display: grid;
+    }
+
+    .extracts-dignities__text,
+    .extracts-differences__text,
+    .extracts-advantages__text {
+        margin-top: 25px;
     }
 
     .footer__form-input {
@@ -217,6 +334,37 @@
 
     .collections-top {
         padding: 100px 0;
+    }
+
+    .about {
+        padding: 90px 0;
+    }
+
+    .about__title {
+        margin-left: 5px;
+    }
+
+    .about__inner-left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about__inner {
+        display: grid;
+        justify-content: center;
+    }
+    
+    .about-img {
+        border-radius: 6px;
+    }
+
+    .about__inner-right {
+        margin: 65px 0 0 0;
+    }
+
+    .inner__bottom-img {
+        max-height: 100%;
+        width: 100vw;
     }
 
     .footer__top {
@@ -335,12 +483,13 @@
 
     .advantages__text {
         font-size: 14px;
+        max-width: 150px;
     }
 
     .information {
         padding: 100px 0 150px;
     }
-    
+
     .information__text {
         font-size: 24px;
     }
@@ -382,13 +531,22 @@
         display: block;
         margin-top: -12px;
     }
-    
+
+    .product-card__link-back {
+        margin-left: 100px;
+    }
+
+    .product-card__title-mobile {
+        margin-left: 60px;
+    }
+
+    .about__inner-right {
+        margin-left: 0;
+    }
+
 }
 
 @media (max-width: 400px) {
-    .reviews {
-
-    } 
 
     .top__slider-info {
         transform: translate(152px, 40px);
