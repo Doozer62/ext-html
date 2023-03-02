@@ -10,13 +10,10 @@ const swiper = new Swiper('.swiper', {
     }
   },
 
-
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
-
 
   scrollbar: {
     el: '.swiper-scrollbar',
@@ -190,3 +187,39 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
   AOS.init({
     duration: 1400,
   });
+
+
+
+  // П О Д Р О Б Н Е Е
+
+//   const itemsMore = document.querySelectorAll(".textbox button");
+
+// function toggleAccordion() {
+//   const itemToggle = this.getAttribute('aria-expanded');
+  
+//   for (i = 0; i < items.length; i++) {
+//     itemsMore[i].setAttribute('aria-expanded', 'false');
+//   }
+  
+//   if (itemToggle == 'false') {
+//     this.setAttribute('aria-expanded', 'true');
+//   }
+// }
+
+// items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+
+  // document.getElementById('more-btn').addEventListener('click', () => {
+  // document.getElementById('mytext2').classList.add('opened');
+  // });
+
+  // document.addEventListener("click", function(e) {
+  //   const m = document.getElementById('mytext2');
+  //   if (e.target.id != 'more-btn' && e.target.id != 'mytext2') {
+  //     m.style.display = document.getElementById('mytext2').classList.remove('opened');
+      
+  //   } else if (e.target.id == 'more-btn') {
+  //     m.style.height = (m.style.height != 'auto') ;  
+  //   } 
+
+  // });

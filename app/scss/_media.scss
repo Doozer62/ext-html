@@ -11,6 +11,10 @@
     .collections__item {
         margin-left: 5px;
     }
+
+    .about-delivery__delivery {
+        margin-right: 40px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -90,6 +94,15 @@
         &__right-total {
             max-width: 100%;
         }
+    }
+
+    .making-order__inner {
+        display: grid;
+        justify-content: center;
+    }
+
+    .making-order__left {
+        display: flex;
     }
 
     .footer__info-title {
@@ -178,7 +191,7 @@
 
     #thumbCarousel .carousel__track {
         display: flex;
-        justify-content: start;
+        justify-content: center;
         margin-left: 7px;
     }
 
@@ -271,6 +284,10 @@
     .extracts-differences__text,
     .extracts-advantages__text {
         margin-top: 25px;
+    }
+
+    .extracts-advantages__text {
+        margin-left: 0;
     }
 
     .footer__form-input {
@@ -367,6 +384,89 @@
         width: 100vw;
     }
 
+    .cart {
+
+        &__left-items-desktop {
+            display: none; 
+        }
+
+        &__left-items-mobile {
+            display: block;
+        }
+
+        &__left-item {
+           flex-wrap: wrap;
+        }
+
+        &__left-content {
+            display: flex;
+            justify-content: space-between;
+            max-width: 100%;
+            margin-top: 20px;
+            margin-left: 0;
+            font-size: 14px;
+        }
+
+        &__left-content-inner {
+            margin-left: 21px;
+        }
+
+        &__left-description {
+            font-size: 12px;
+        }
+
+        &__left-content-bottom {
+            margin-left: 85px;
+            padding-bottom: 15px;
+        }
+    }
+
+    .making-order__form-field input, .making-order__form-field select {
+        width: 311px;
+        margin:auto;
+    }
+
+    .about-delivery {
+        padding-top: 90px;
+    }
+
+    .about-delivery__delivery {
+        display: block;
+    }
+
+    .about-delivery__title {
+        margin-left: 0;
+    }
+
+    .delivery__items,
+    .refund__items {
+        display: block;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        margin-left: 15px;
+    }
+
+    .delivery__item {
+        margin-top: 43px;
+    }
+
+    .couriers__items {
+        margin-top: 43px;
+    }
+
+    .about-delivery__couriers {
+        display: grid;
+    }
+
+    .couriers__img {
+        max-width: 100px;
+        margin-right: 0;
+    }
+
+    .about-delivery__refund {
+        display: grid;
+    }
+
     .footer__top {
         display: grid;
         justify-content: center;
@@ -433,6 +533,27 @@
 
     .ext-logo {
         display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .making-order__left {
+        display: grid;
+    }
+
+    .couriers__items {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 170px 170px;
+    }
+
+    .delivery__item-text {
+        font-size: 14px;
+    }
+
+    .refund__item {
+        font-size: 14px;
     }
 }
 
@@ -544,6 +665,12 @@
         margin-left: 0;
     }
 
+    .cart {
+        &__img {
+            max-width: 150px;
+        }
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -586,5 +713,25 @@
     .collections__item {
         margin-top: 42px;
         max-width: 290px;
+    }
+
+    .cart {
+        &__img {
+            max-width: 85px;
+        }
+
+        &__left-content-bottom {
+            margin-left: 0;
+        }
+    }
+
+    .making-order__form-field input, .making-order__form-field select {
+        width: 300px;
+    }
+
+    .couriers__items {
+        grid-template-columns: none;
+        justify-content: center;
+        justify-items: end;
     }
 }

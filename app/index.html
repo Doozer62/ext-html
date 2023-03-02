@@ -162,13 +162,13 @@
                         </p>
                         <div class="rightside-menu__contacts-border"></div>
                         <a class="rightside-menu__phone" href="tel:+79160210222">+7 916 021 02 22</a>
-                        <p class="rightside-menu__work">Monday – Friday: 9am – 7pm EST</p>
+                        <p class="rightside-menu__work">Понедельник – Пятница: 9am – 7pm</p>
                         <p class="rightside-menu__email-text">email</p>
                         <div class="rightside-menu__contacts-border"></div>
                         <p class="rightside-menu__email-delivery">По вопросам доставки:</p>
-                        <a href="mailto:sales@ext.mail.com" class="rightside-menu__email">Sales@ext.mail.com</a>
+                        <a href="mailto:sales@ext.llc" class="rightside-menu__email">sales@ext.llc</a>
                         <p class="rightside-menu__email-question">По общим вопросам:</p>
-                        <a href="mailto:hello@ext.mail.com" class="rightside-menu__email">Hello@ext.mail.com</a>
+                        <a href="mailto:info@ext.llc" class="rightside-menu__email">info@ext.llc</a>
                     </div>
                     <div class="rightside-menu__bottom">
                         <ul class="footer__social">
@@ -381,7 +381,7 @@
                 <div class="top__slider">
                     <div class="top__slider-item">
                         <div class="top__slider-inner">
-                            <img src="images/content/slider1.jpg" alt="картинка слайдера-1" class="top__slider-img">
+                            <img src="images/content/les 1.png" alt="картинка слайдера-1" class="top__slider-img">
 
                             <div class="top__slider-info">
                                 <h3 class="top__slider-title title-collection">
@@ -391,7 +391,7 @@
                                 <p class="top__slider-text">
                                     концентрат естественных веществ растений
                                 </p>
-                                <a href="#" class="link-more">Подробнее</a>
+                                <a href="collections.html" class="link-more">Подробнее</a>
                             </div>
 
                         </div>
@@ -403,14 +403,13 @@
 
                             <div class="top__slider-info">
                                 <h3 class="top__slider-title title-collection">
-                                    СО&sup2; Концентраты
-                                    растений без растворителя
+                                    СО&sup2; Экстракты For Health and Cooking
                                 </h3>
                                 <!-- <img src="images/line-slider.svg" alt="" class="line-slider"> -->
                                 <p class="top__slider-text">
-                                    концентрат естественных веществ растений
+                                    вкусное и полезное дополнение к вашим любимым напиткам и блюдам
                                 </p>
-                                <a href="#" class="link-more">Подробнее</a>
+                                <a href="forhealth.html" class="link-more">Подробнее</a>
                             </div>
                         </div>
 
@@ -457,7 +456,9 @@
                                 <img class="swiper-slide__img" src="images/products/№01.jpg" alt="продукт 1">
                                 <h4 class="swiper-popular__title">№01</h4>
                                 <p class="swiper-popular__title-bottom">Экстракт "Anti-acne"</p>
-                                <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.</p>
+                                <p class="swiper-popular__text">с салициловой и азелаиновой кислотами.g sadfsdf
+                                    asdfasefasfasfsaf asefeas fseaf srg rsges grsd g srgd ghaserg drasgag sdrgdsr dra
+                                    asre hath</p>
                             </a>
                             <div class="swiper-slide__bottom">
                                 <span class="swiper-slide__price">1200 ₽.</span>
@@ -569,13 +570,25 @@
                                 <h3 class="collections__info-title title-collection">
                                     СО&sup2; Экстракты Fortuna Botanica
                                 </h3>
-                                <p class="collections__info-text">
+                                <div class="collections__info-text textbox" id="mytext">
                                     Огромный спектр действия каждого СО2-экстракта – это повышенная концентрация и
                                     сбалансированность биологически активных свойств, чистота извлечения, абсолютная
                                     связь с
-                                    природой ставят эти продукты...
-                                </p>
-                                <a href="botanica.html" class="link-more">Подробнее</a>
+                                    природой ставят эти продукты в... особый раздел сверхполезных добавок во всех
+                                    отраслях народного хозяйства.
+                                    Самое интересное, требуется небольшая дозировка, чтобы качественно изменить
+                                    практически любой продукт.
+                                    Экстракты удобно брать с собой, можно добавлять в любой напиток или еду.
+                                    Помогите своему организму легче переносить ежедневные стрессовые ситуации,
+                                    защищаться от негативного воздействия окружающей среды, увеличить работоспособность,
+                                    выносливость к высоким нагрузкам и снизить утомляемость, укрепить иммунитет.
+
+                                </div>
+                                <div>
+                                    <button class="link-more" onclick="document.getElementById('mytext').classList.add('opened');
+                                    return false;">Подробнее</button>
+                                </div>
+                                <!-- <a href="botanica.html" class="link-more">Подробнее</a> -->
                             </div>
                         </div>
 
@@ -585,15 +598,47 @@
                                 <h3 class="collections__info-title title-collection">
                                     СО&sup2; Экстракты For Health and Cooking
                                 </h3>
-                                <p class="collections__info-text">
+                                <div class="textbox collections__info-text" id="mytext2">
+                                
                                     Экстракты For Health and Cooking - вкусное и полезное дополнение к вашим любимым
                                     напиткам и
                                     блюдам. Добавьте несколько капель настоящего экстракта богатейших растений в еду или
                                     питье,
-                                    чтобы...
-                                </p>
-                                <a href="forhealth.html" class="link-more">Подробнее</a>
+                                    чтобы...придать им более яркий и насыщенный вкус. СО2 - сделают ваш завтрак, обед
+                                    или ужин еще полезнее и аппетитнее.
+                                    Применение СО2-экстрактов позволит:
+                                    <li class="collections__info-text">
+                                        Оздоровить пищу , обогатив ее биологически активными веществами, жирорастворимым
+                                        комплексом витаминов, натуральным ароматом и вкусом, природными антиоксидантами
+                                        и другими комплексами, которых не хватает в сегодняшней пище;
+                                    </li>
+                                        <li class="collections__info-text">
+                                            Увеличит сроки хранения, так как СО2-экстракты бактерицидны, благодаря наличию в
+                                        них природных антиокислителей, консервантов, фитонцидов и т.д.
+                                        </li>
+                                        <p class="collections__info-text">
+                                            В качестве компонентов, СО2-экстракты используют в приготовлении:
+                                        - кондитерских изделий;
+                                        <br>- консервов;
+                                        <br>- для маринада мясной продукции;
+                                        <br>- соусов, кетчупов, майонезов;
+                                        <br> - детского питания;
+                                        <br>- спортивного питания;
+                                        <br>- хлебобулочных изделий;
+                                        <br>- вина и пивной продукции;
+                                        <br>- соевых продуктов.
+                                        На каждый экстракт, в определенной рецептуре, разработана техническая
+                                        документация и исследован их состав. Как пищевые добавки экстракты уже давно
+                                        применяются в различных пищевых отраслях.
+                                    </p>
+                                    
                             </div>
+                            <div>
+                                <button class="link-more" onclick="document.getElementById('mytext2').classList.add('opened');
+                                return false;">Подробнее</button>
+                            </div>
+                            </div>
+                            
                         </div>
 
                         <div class="collections__item">
@@ -603,12 +648,16 @@
                                     СО&sup2; Экстракты
                                     For Dogs and Cats
                                 </h3>
-                                <p class="collections__info-text">
-                                    СО2 Экстракты For Dogs and Cats – настоящий подарок всем любителям своих питомцев!
+                                <div class="collections__info-text" id="mytext3">
+                                    СО&sup2; Экстракты For Dogs and Cats – настоящий подарок всем любителям своих питомцев!
                                     Активный
                                     природный концентрат, который добавляют животным в пищу.
-                                </p>
-                                <a href="foranimal.html" class="link-more">Подробнее</a>
+                                </div>
+
+                                <div>
+                                    <button class="link-more" onclick="document.getElementById('mytext3').classList.add('opened');
+                                    return false;">Подробнее</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -749,9 +798,7 @@
                                 01
                             </p>
                             <p class="advantages__text">
-                                СО2 Экстракты For Dogs and Cats – настоящий подарок всем любителям своих питомцев!
-                                Активный
-                                природный концентрат, который добавляют животным в пищу.
+                                Полностью чистый продукт
                             </p>
                         </div>
 
@@ -761,13 +808,7 @@
                                 02
                             </p>
                             <p class="advantages__text">
-                                Отсутствует процент опасности для здоровья человека (в отличии от гексановых,
-                                хладоновых,
-                                нефрасовых);
-                                Совокупность аромата, вкуса и полезных свойств (в отличии от эфирных масел);
-                                Нет ограничений использования в любой промышленности (в отличии от спиртовых
-                                экстрактов);
-                                Увеличение сроков хранения (в отличии от масляных экстрактов).
+                                Высокая концентрация полезных веществ
                             </p>
                         </div>
 
@@ -777,8 +818,7 @@
                                 03
                             </p>
                             <p class="advantages__text">
-                                СО2-экстракт абсолютно
-                                натуральный чистый продукт;
+                                Доступная цена
                             </p>
                         </div>
                     </div>
@@ -790,10 +830,10 @@
         <section class="information">
             <div class="container">
                 <p class="information__text">
-                    СО2-экстракты – концентрат естественных веществ растений, передающий их аромат
-                    и вкус, а также набор биоактивных веществ (провитаминов и витаминов групп A, D, E.
+                    В 21 веке сложно найти чистый, полезный, без влияния окружающей среды и радиации продукт, поэтому мы
+                    выпустили целую коллекцию СО2 экстракта, чтобы восполнить все пробелы недостающих элементов!
                 </p>
-                <a href="#" class="link-more information__link-more">Подробнее</a>
+                <a href="about.html" class="link-more information__link-more">Подробнее</a>
             </div>
         </section>
 
@@ -985,7 +1025,7 @@
                     </p>
                     <ul class="footer__contacts-items">
                         <a href="tel: +79161232323">Телефон: +7 916 123 23 23</a>
-                        <a href="mailto: example@mail.ru">Email: name@example.com</a>
+                        <a href="mailto: info@ext.llc">Email: info@ext.llc</a>
                     </ul>
                     <ul class="footer__social">
                         <li class="footer__social-list"><a href="#" class="footer__social-link">
@@ -1031,18 +1071,17 @@
 
                 <div class="footer__copyright">
                     <span class="footer__copyright-text">
-                        Privacy Policy | Boston Accident Lawyers Breakstone, White & Gluck
+                        Политика конфиденциальности | Этот сайт защищен авторскими правами.
                         <p>
-                            This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service
-                            apply.
+                            Политика конфиденциальности веб-сайта несет ответственность за уникальность этой информации
+                            и предоставляемых услуг. Пожалуйста, не предоставляйте конфиденциальную информацию в
+                            текстовом сообщении без подписания договора на предоставление конфиденциальной информации.
                             <p>
-                                Please do not include any confidential or sensitive information in a contact form, text
-                                message, or voicemail. The contact form sends information by non-encrypted email, which
-                                is
-                                not secure. Submitting a contact form, sending a text message, making a phone call, or
-                                leaving a voicemail does not create an attorney-client relationship.
+                                Контактная форма для заполнения ваших данных отправляет информацию с незашифрованной
+                                электронной почты , не является безопасным.
+                                Подтверждая свой заказ, вы несете ответственность за предоставленную информацию.
                                 <p>
-                                    Copyright © 2022, Breakstone, White & Gluck, P.C.
+                                    Copyright © 2023, EXT.
                     </span>
                 </div>
             </div>
